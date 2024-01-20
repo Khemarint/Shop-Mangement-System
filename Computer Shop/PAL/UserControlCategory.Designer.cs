@@ -1,6 +1,6 @@
 ﻿namespace Computer_Shop.PAL
 {
-    partial class UserControlBrand
+    partial class UserControlCategory
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,77 +32,112 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tcBrand = new System.Windows.Forms.TabControl();
-            this.tpAddBrand = new System.Windows.Forms.TabPage();
+            this.tcCategory = new System.Windows.Forms.TabControl();
+            this.tpAddCategory = new System.Windows.Forms.TabPage();
+            this.tpManageCategory = new System.Windows.Forms.TabPage();
+            this.tpOptions = new System.Windows.Forms.TabPage();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.cmbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtBrandName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCategoryName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tpMangeBrand = new System.Windows.Forms.TabPage();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.lblTotal = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dgvBrand = new System.Windows.Forms.DataGridView();
+            this.dgvCategory = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtSearchBrandName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tpOptions = new System.Windows.Forms.TabPage();
+            this.txtSearchCategoryName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.picSearch = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnRemove = new Guna.UI2.WinForms.Guna2Button();
             this.btnChange = new Guna.UI2.WinForms.Guna2Button();
             this.cmbStatus1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtBrandName1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCategoryName1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.picSearch = new System.Windows.Forms.PictureBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tcBrand.SuspendLayout();
-            this.tpAddBrand.SuspendLayout();
-            this.tpMangeBrand.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBrand)).BeginInit();
+            this.tcCategory.SuspendLayout();
+            this.tpAddCategory.SuspendLayout();
+            this.tpManageCategory.SuspendLayout();
             this.tpOptions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
             this.SuspendLayout();
             // 
-            // tcBrand
+            // tcCategory
             // 
-            this.tcBrand.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.tcBrand.Controls.Add(this.tpAddBrand);
-            this.tcBrand.Controls.Add(this.tpMangeBrand);
-            this.tcBrand.Controls.Add(this.tpOptions);
-            this.tcBrand.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcBrand.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tcBrand.Location = new System.Drawing.Point(0, 0);
-            this.tcBrand.Name = "tcBrand";
-            this.tcBrand.SelectedIndex = 0;
-            this.tcBrand.Size = new System.Drawing.Size(680, 450);
-            this.tcBrand.TabIndex = 0;
+            this.tcCategory.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.tcCategory.Controls.Add(this.tpAddCategory);
+            this.tcCategory.Controls.Add(this.tpManageCategory);
+            this.tcCategory.Controls.Add(this.tpOptions);
+            this.tcCategory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcCategory.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tcCategory.Location = new System.Drawing.Point(0, 0);
+            this.tcCategory.Name = "tcCategory";
+            this.tcCategory.SelectedIndex = 0;
+            this.tcCategory.Size = new System.Drawing.Size(680, 450);
+            this.tcCategory.TabIndex = 0;
             // 
-            // tpAddBrand
+            // tpAddCategory
             // 
-            this.tpAddBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.tpAddBrand.Controls.Add(this.btnAdd);
-            this.tpAddBrand.Controls.Add(this.cmbStatus);
-            this.tpAddBrand.Controls.Add(this.label3);
-            this.tpAddBrand.Controls.Add(this.txtBrandName);
-            this.tpAddBrand.Controls.Add(this.label1);
-            this.tpAddBrand.Controls.Add(this.label2);
-            this.tpAddBrand.Location = new System.Drawing.Point(4, 4);
-            this.tpAddBrand.Name = "tpAddBrand";
-            this.tpAddBrand.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAddBrand.Size = new System.Drawing.Size(672, 417);
-            this.tpAddBrand.TabIndex = 0;
-            this.tpAddBrand.Text = "Add Brand";
-            this.tpAddBrand.Click += new System.EventHandler(this.tpAddBrand_Click);
-            this.tpAddBrand.Enter += new System.EventHandler(this.tpAddBrand_Enter);
+            this.tpAddCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.tpAddCategory.Controls.Add(this.btnAdd);
+            this.tpAddCategory.Controls.Add(this.cmbStatus);
+            this.tpAddCategory.Controls.Add(this.label3);
+            this.tpAddCategory.Controls.Add(this.txtCategoryName);
+            this.tpAddCategory.Controls.Add(this.label1);
+            this.tpAddCategory.Controls.Add(this.label2);
+            this.tpAddCategory.Location = new System.Drawing.Point(4, 4);
+            this.tpAddCategory.Name = "tpAddCategory";
+            this.tpAddCategory.Padding = new System.Windows.Forms.Padding(3);
+            this.tpAddCategory.Size = new System.Drawing.Size(672, 417);
+            this.tpAddCategory.TabIndex = 0;
+            this.tpAddCategory.Text = "Add Category";
+            this.tpAddCategory.Enter += new System.EventHandler(this.tpAddCategory_Enter);
+            // 
+            // tpManageCategory
+            // 
+            this.tpManageCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.tpManageCategory.Controls.Add(this.lblTotal);
+            this.tpManageCategory.Controls.Add(this.label6);
+            this.tpManageCategory.Controls.Add(this.dgvCategory);
+            this.tpManageCategory.Controls.Add(this.label4);
+            this.tpManageCategory.Controls.Add(this.label5);
+            this.tpManageCategory.Controls.Add(this.picSearch);
+            this.tpManageCategory.Controls.Add(this.txtSearchCategoryName);
+            this.tpManageCategory.Location = new System.Drawing.Point(4, 4);
+            this.tpManageCategory.Name = "tpManageCategory";
+            this.tpManageCategory.Padding = new System.Windows.Forms.Padding(3);
+            this.tpManageCategory.Size = new System.Drawing.Size(672, 417);
+            this.tpManageCategory.TabIndex = 1;
+            this.tpManageCategory.Text = "Manage Category";
+            this.tpManageCategory.Enter += new System.EventHandler(this.tpManageCategory_Enter);
+            // 
+            // tpOptions
+            // 
+            this.tpOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.tpOptions.Controls.Add(this.btnRemove);
+            this.tpOptions.Controls.Add(this.btnChange);
+            this.tpOptions.Controls.Add(this.cmbStatus1);
+            this.tpOptions.Controls.Add(this.label8);
+            this.tpOptions.Controls.Add(this.txtCategoryName1);
+            this.tpOptions.Controls.Add(this.label9);
+            this.tpOptions.Controls.Add(this.label10);
+            this.tpOptions.Location = new System.Drawing.Point(4, 4);
+            this.tpOptions.Name = "tpOptions";
+            this.tpOptions.Padding = new System.Windows.Forms.Padding(3);
+            this.tpOptions.Size = new System.Drawing.Size(672, 417);
+            this.tpOptions.TabIndex = 2;
+            this.tpOptions.Text = "Option";
+            this.tpOptions.Enter += new System.EventHandler(this.tpOptions_Enter);
+            this.tpOptions.Leave += new System.EventHandler(this.tpOptions_Leave);
             // 
             // btnAdd
             // 
@@ -122,7 +157,7 @@
             this.btnAdd.Location = new System.Drawing.Point(33, 197);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(109, 38);
-            this.btnAdd.TabIndex = 8;
+            this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -146,7 +181,7 @@
             this.cmbStatus.Location = new System.Drawing.Point(369, 133);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(269, 36);
-            this.cmbStatus.TabIndex = 6;
+            this.cmbStatus.TabIndex = 2;
             // 
             // label3
             // 
@@ -157,32 +192,32 @@
             this.label3.Location = new System.Drawing.Point(365, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 20);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Status: ";
             // 
-            // txtBrandName
+            // txtCategoryName
             // 
-            this.txtBrandName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBrandName.BorderColor = System.Drawing.Color.LightGray;
-            this.txtBrandName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBrandName.DefaultText = "";
-            this.txtBrandName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBrandName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBrandName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBrandName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBrandName.FillColor = System.Drawing.Color.LightGray;
-            this.txtBrandName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBrandName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBrandName.ForeColor = System.Drawing.Color.Black;
-            this.txtBrandName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBrandName.Location = new System.Drawing.Point(33, 133);
-            this.txtBrandName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtBrandName.Name = "txtBrandName";
-            this.txtBrandName.PasswordChar = '\0';
-            this.txtBrandName.PlaceholderText = "";
-            this.txtBrandName.SelectedText = "";
-            this.txtBrandName.Size = new System.Drawing.Size(269, 36);
-            this.txtBrandName.TabIndex = 3;
+            this.txtCategoryName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCategoryName.BorderColor = System.Drawing.Color.LightGray;
+            this.txtCategoryName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCategoryName.DefaultText = "";
+            this.txtCategoryName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCategoryName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCategoryName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCategoryName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCategoryName.FillColor = System.Drawing.Color.LightGray;
+            this.txtCategoryName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCategoryName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCategoryName.ForeColor = System.Drawing.Color.Black;
+            this.txtCategoryName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCategoryName.Location = new System.Drawing.Point(33, 133);
+            this.txtCategoryName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCategoryName.Name = "txtCategoryName";
+            this.txtCategoryName.PasswordChar = '\0';
+            this.txtCategoryName.PlaceholderText = "";
+            this.txtCategoryName.SelectedText = "";
+            this.txtCategoryName.Size = new System.Drawing.Size(269, 36);
+            this.txtCategoryName.TabIndex = 1;
             // 
             // label1
             // 
@@ -192,38 +227,24 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(29, 109);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Brand Name: ";
+            this.label1.Size = new System.Drawing.Size(125, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Category Name: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 3);
+            this.label2.Location = new System.Drawing.Point(6, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 28);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "../Add Brand";
+            this.label2.Size = new System.Drawing.Size(155, 28);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "../Add Category";
             // 
-            // tpMangeBrand
+            // guna2Elipse1
             // 
-            this.tpMangeBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.tpMangeBrand.Controls.Add(this.lblTotal);
-            this.tpMangeBrand.Controls.Add(this.label6);
-            this.tpMangeBrand.Controls.Add(this.dgvBrand);
-            this.tpMangeBrand.Controls.Add(this.label4);
-            this.tpMangeBrand.Controls.Add(this.label5);
-            this.tpMangeBrand.Controls.Add(this.picSearch);
-            this.tpMangeBrand.Controls.Add(this.txtSearchBrandName);
-            this.tpMangeBrand.Location = new System.Drawing.Point(4, 4);
-            this.tpMangeBrand.Name = "tpMangeBrand";
-            this.tpMangeBrand.Padding = new System.Windows.Forms.Padding(3);
-            this.tpMangeBrand.Size = new System.Drawing.Size(672, 417);
-            this.tpMangeBrand.TabIndex = 1;
-            this.tpMangeBrand.Text = "Manage Brand";
-            this.tpMangeBrand.Enter += new System.EventHandler(this.tpMangeBrand_Enter);
+            this.guna2Elipse1.TargetControl = this.btnAdd;
             // 
             // lblTotal
             // 
@@ -249,16 +270,16 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Total:";
             // 
-            // dgvBrand
+            // dgvCategory
             // 
-            this.dgvBrand.AllowUserToAddRows = false;
-            this.dgvBrand.AllowUserToDeleteRows = false;
-            this.dgvBrand.AllowUserToResizeColumns = false;
-            this.dgvBrand.AllowUserToResizeRows = false;
-            this.dgvBrand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvBrand.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvBrand.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dgvBrand.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvCategory.AllowUserToAddRows = false;
+            this.dgvCategory.AllowUserToDeleteRows = false;
+            this.dgvCategory.AllowUserToResizeColumns = false;
+            this.dgvCategory.AllowUserToResizeRows = false;
+            this.dgvCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvCategory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCategory.BackgroundColor = System.Drawing.Color.LightGray;
+            this.dgvCategory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -266,11 +287,10 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBrand.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvBrand.ColumnHeadersHeight = 29;
-            this.dgvBrand.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvBrand.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
+            this.dgvCategory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvCategory.ColumnHeadersHeight = 29;
+            this.dgvCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvCategory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
             this.Column3});
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -280,12 +300,12 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkGray;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBrand.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvBrand.EnableHeadersVisualStyles = false;
-            this.dgvBrand.Location = new System.Drawing.Point(8, 144);
-            this.dgvBrand.MultiSelect = false;
-            this.dgvBrand.Name = "dgvBrand";
-            this.dgvBrand.ReadOnly = true;
+            this.dgvCategory.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvCategory.EnableHeadersVisualStyles = false;
+            this.dgvCategory.Location = new System.Drawing.Point(8, 144);
+            this.dgvCategory.MultiSelect = false;
+            this.dgvCategory.Name = "dgvCategory";
+            this.dgvCategory.ReadOnly = true;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -293,18 +313,18 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DarkGray;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBrand.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvBrand.RowHeadersWidth = 51;
-            this.dgvBrand.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvBrand.RowTemplate.Height = 24;
-            this.dgvBrand.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBrand.ShowCellErrors = false;
-            this.dgvBrand.ShowCellToolTips = false;
-            this.dgvBrand.ShowEditingIcon = false;
-            this.dgvBrand.ShowRowErrors = false;
-            this.dgvBrand.Size = new System.Drawing.Size(658, 213);
-            this.dgvBrand.TabIndex = 0;
-            this.dgvBrand.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBrand_CellClick);
+            this.dgvCategory.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvCategory.RowHeadersWidth = 51;
+            this.dgvCategory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvCategory.RowTemplate.Height = 24;
+            this.dgvCategory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCategory.ShowCellErrors = false;
+            this.dgvCategory.ShowCellToolTips = false;
+            this.dgvCategory.ShowEditingIcon = false;
+            this.dgvCategory.ShowRowErrors = false;
+            this.dgvCategory.Size = new System.Drawing.Size(660, 213);
+            this.dgvCategory.TabIndex = 0;
+            this.dgvCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellClick);
             // 
             // label4
             // 
@@ -314,9 +334,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(159, 63);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 20);
+            this.label4.Size = new System.Drawing.Size(125, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Brand Name: ";
+            this.label4.Text = "Category Name: ";
             // 
             // label5
             // 
@@ -325,56 +345,51 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(3, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 28);
+            this.label5.Size = new System.Drawing.Size(191, 28);
             this.label5.TabIndex = 0;
-            this.label5.Text = "../Manage Brand";
+            this.label5.Text = "../Manage Category";
             // 
-            // txtSearchBrandName
+            // txtSearchCategoryName
             // 
-            this.txtSearchBrandName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSearchBrandName.BackColor = System.Drawing.Color.LightGray;
-            this.txtSearchBrandName.BorderColor = System.Drawing.Color.LightGray;
-            this.txtSearchBrandName.BorderThickness = 0;
-            this.txtSearchBrandName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchBrandName.DefaultText = "";
-            this.txtSearchBrandName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchBrandName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchBrandName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchBrandName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchBrandName.FillColor = System.Drawing.Color.LightGray;
-            this.txtSearchBrandName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBrandName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearchBrandName.ForeColor = System.Drawing.Color.Black;
-            this.txtSearchBrandName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBrandName.Location = new System.Drawing.Point(163, 87);
-            this.txtSearchBrandName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSearchBrandName.Name = "txtSearchBrandName";
-            this.txtSearchBrandName.PasswordChar = '\0';
-            this.txtSearchBrandName.PlaceholderForeColor = System.Drawing.Color.White;
-            this.txtSearchBrandName.PlaceholderText = "";
-            this.txtSearchBrandName.SelectedText = "";
-            this.txtSearchBrandName.Size = new System.Drawing.Size(332, 36);
-            this.txtSearchBrandName.TabIndex = 2;
-            this.txtSearchBrandName.TextChanged += new System.EventHandler(this.txtSearchBrandName_TextChanged);
+            this.txtSearchCategoryName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSearchCategoryName.BackColor = System.Drawing.Color.LightGray;
+            this.txtSearchCategoryName.BorderColor = System.Drawing.Color.LightGray;
+            this.txtSearchCategoryName.BorderThickness = 0;
+            this.txtSearchCategoryName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchCategoryName.DefaultText = "";
+            this.txtSearchCategoryName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchCategoryName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchCategoryName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchCategoryName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchCategoryName.FillColor = System.Drawing.Color.LightGray;
+            this.txtSearchCategoryName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchCategoryName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearchCategoryName.ForeColor = System.Drawing.Color.Black;
+            this.txtSearchCategoryName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchCategoryName.Location = new System.Drawing.Point(163, 87);
+            this.txtSearchCategoryName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearchCategoryName.Name = "txtSearchCategoryName";
+            this.txtSearchCategoryName.PasswordChar = '\0';
+            this.txtSearchCategoryName.PlaceholderForeColor = System.Drawing.Color.White;
+            this.txtSearchCategoryName.PlaceholderText = "";
+            this.txtSearchCategoryName.SelectedText = "";
+            this.txtSearchCategoryName.Size = new System.Drawing.Size(332, 36);
+            this.txtSearchCategoryName.TabIndex = 1;
+            this.txtSearchCategoryName.TextChanged += new System.EventHandler(this.txtSearchCategoryName_TextChanged);
             // 
-            // tpOptions
+            // picSearch
             // 
-            this.tpOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.tpOptions.Controls.Add(this.btnRemove);
-            this.tpOptions.Controls.Add(this.btnChange);
-            this.tpOptions.Controls.Add(this.cmbStatus1);
-            this.tpOptions.Controls.Add(this.label8);
-            this.tpOptions.Controls.Add(this.txtBrandName1);
-            this.tpOptions.Controls.Add(this.label9);
-            this.tpOptions.Controls.Add(this.label10);
-            this.tpOptions.Location = new System.Drawing.Point(4, 4);
-            this.tpOptions.Name = "tpOptions";
-            this.tpOptions.Padding = new System.Windows.Forms.Padding(3);
-            this.tpOptions.Size = new System.Drawing.Size(672, 417);
-            this.tpOptions.TabIndex = 2;
-            this.tpOptions.Text = "Option";
-            this.tpOptions.Enter += new System.EventHandler(this.tpOptions_Enter);
-            this.tpOptions.Leave += new System.EventHandler(this.tpOptions_Leave);
+            this.picSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picSearch.BackColor = System.Drawing.Color.LightGray;
+            this.picSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSearch.Image = global::Computer_Shop.Properties.Resources.search;
+            this.picSearch.Location = new System.Drawing.Point(457, 92);
+            this.picSearch.Name = "picSearch";
+            this.picSearch.Size = new System.Drawing.Size(38, 28);
+            this.picSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSearch.TabIndex = 19;
+            this.picSearch.TabStop = false;
+            this.picSearch.MouseHover += new System.EventHandler(this.picSearch_MouseHover);
             // 
             // btnRemove
             // 
@@ -454,29 +469,29 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Status: ";
             // 
-            // txtBrandName1
+            // txtCategoryName1
             // 
-            this.txtBrandName1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBrandName1.BorderColor = System.Drawing.Color.LightGray;
-            this.txtBrandName1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBrandName1.DefaultText = "";
-            this.txtBrandName1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBrandName1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBrandName1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBrandName1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBrandName1.FillColor = System.Drawing.Color.LightGray;
-            this.txtBrandName1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBrandName1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBrandName1.ForeColor = System.Drawing.Color.Black;
-            this.txtBrandName1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBrandName1.Location = new System.Drawing.Point(33, 133);
-            this.txtBrandName1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtBrandName1.Name = "txtBrandName1";
-            this.txtBrandName1.PasswordChar = '\0';
-            this.txtBrandName1.PlaceholderText = "";
-            this.txtBrandName1.SelectedText = "";
-            this.txtBrandName1.Size = new System.Drawing.Size(269, 36);
-            this.txtBrandName1.TabIndex = 1;
+            this.txtCategoryName1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCategoryName1.BorderColor = System.Drawing.Color.LightGray;
+            this.txtCategoryName1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCategoryName1.DefaultText = "";
+            this.txtCategoryName1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCategoryName1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCategoryName1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCategoryName1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCategoryName1.FillColor = System.Drawing.Color.LightGray;
+            this.txtCategoryName1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCategoryName1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCategoryName1.ForeColor = System.Drawing.Color.Black;
+            this.txtCategoryName1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCategoryName1.Location = new System.Drawing.Point(33, 133);
+            this.txtCategoryName1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCategoryName1.Name = "txtCategoryName1";
+            this.txtCategoryName1.PasswordChar = '\0';
+            this.txtCategoryName1.PlaceholderText = "";
+            this.txtCategoryName1.SelectedText = "";
+            this.txtCategoryName1.Size = new System.Drawing.Size(269, 36);
+            this.txtCategoryName1.TabIndex = 1;
             // 
             // label9
             // 
@@ -486,9 +501,9 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(29, 109);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 20);
+            this.label9.Size = new System.Drawing.Size(125, 20);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Brand Name: ";
+            this.label9.Text = "Category Name: ";
             // 
             // label10
             // 
@@ -497,80 +512,50 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(3, 3);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(152, 28);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "../Option Brand";
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this.btnAdd;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.btnChange;
+            this.label10.Size = new System.Drawing.Size(93, 28);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "../Option";
             // 
             // guna2Elipse3
             // 
-            this.guna2Elipse3.TargetControl = this.btnRemove;
+            this.guna2Elipse3.TargetControl = this.btnChange;
             // 
-            // toolTip1
+            // guna2Elipse4
             // 
-            this.toolTip1.BackColor = System.Drawing.SystemColors.Highlight;
-            // 
-            // picSearch
-            // 
-            this.picSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picSearch.BackColor = System.Drawing.Color.LightGray;
-            this.picSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSearch.Image = global::Computer_Shop.Properties.Resources.search;
-            this.picSearch.Location = new System.Drawing.Point(457, 92);
-            this.picSearch.Name = "picSearch";
-            this.picSearch.Size = new System.Drawing.Size(38, 28);
-            this.picSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSearch.TabIndex = 12;
-            this.picSearch.TabStop = false;
-            this.picSearch.MouseHover += new System.EventHandler(this.picSearch_MouseHover);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Brand_Id";
-            this.Column1.HeaderText = "Brand #";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.guna2Elipse4.TargetControl = this.btnRemove;
             // 
             // Column2
             // 
-            this.Column2.DataPropertyName = "Brand_Name";
-            this.Column2.HeaderText = "Brand Name";
+            this.Column2.DataPropertyName = "Category_Name";
+            this.Column2.HeaderText = "Category Name";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.DataPropertyName = "Brand_Status";
+            this.Column3.DataPropertyName = "Category_Status";
             this.Column3.HeaderText = "Status";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
-            // UserControlBrand
+            // UserControlCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.Controls.Add(this.tcBrand);
-            this.Name = "UserControlBrand";
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.tcCategory);
+            this.Name = "UserControlCategory";
             this.Size = new System.Drawing.Size(680, 450);
-            this.tcBrand.ResumeLayout(false);
-            this.tpAddBrand.ResumeLayout(false);
-            this.tpAddBrand.PerformLayout();
-            this.tpMangeBrand.ResumeLayout(false);
-            this.tpMangeBrand.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBrand)).EndInit();
+            this.tcCategory.ResumeLayout(false);
+            this.tpAddCategory.ResumeLayout(false);
+            this.tpAddCategory.PerformLayout();
+            this.tpManageCategory.ResumeLayout(false);
+            this.tpManageCategory.PerformLayout();
             this.tpOptions.ResumeLayout(false);
             this.tpOptions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
             this.ResumeLayout(false);
 
@@ -578,36 +563,35 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tcBrand;
-        private System.Windows.Forms.TabPage tpAddBrand;
-        private System.Windows.Forms.TabPage tpMangeBrand;
+        private System.Windows.Forms.TabControl tcCategory;
+        private System.Windows.Forms.TabPage tpAddCategory;
+        private System.Windows.Forms.TabPage tpManageCategory;
         private System.Windows.Forms.TabPage tpOptions;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox txtBrandName;
+        private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2ComboBox cmbStatus;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearchBrandName;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2TextBox txtCategoryName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private System.Windows.Forms.PictureBox picSearch;
-        private System.Windows.Forms.DataGridView dgvBrand;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dgvCategory;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox picSearch;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearchCategoryName;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private Guna.UI2.WinForms.Guna2Button btnRemove;
         private Guna.UI2.WinForms.Guna2Button btnChange;
         private Guna.UI2.WinForms.Guna2ComboBox cmbStatus1;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2TextBox txtBrandName1;
+        private Guna.UI2.WinForms.Guna2TextBox txtCategoryName1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2Button btnRemove;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
-        private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }

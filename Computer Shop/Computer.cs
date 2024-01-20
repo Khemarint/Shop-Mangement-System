@@ -194,19 +194,19 @@ namespace Computer
 				sqlCommand.ExecuteNonQuery();
 				MessageBox.Show("Added successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 			}
-			catch (SqlException ex)
-			{
-				bool flag = ex.Number == 2627;
-				if (flag)
-				{
-					MessageBox.Show("Category already add.", "Infromation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-				}
-				else
-				{
-					MessageBox.Show("Category not added.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-				}
-			}
-			connection.Close();
+            catch (SqlException ex)
+            {
+                if (ex.Number == 2627)
+                {
+                    MessageBox.Show("Category already add.", "Infromation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                else
+                {
+                    MessageBox.Show("Category not added. Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                }
+            }
+
+            connection.Close();
 		}
 
 		// Token: 0x06000014 RID: 20 RVA: 0x00002648 File Offset: 0x00000848

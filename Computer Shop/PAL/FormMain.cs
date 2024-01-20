@@ -63,14 +63,28 @@ namespace Computer_Shop.PAL
             MovePanel(btnDashboard);
             userControlBrand1.Visible = false;
             userControlDashboard1.Visible = true;
+            userControlCategory1.Visible = false;
+            //pnlCenter.Controls.Clear();
+            //test abc = new test();
+            //abc.TopMost = true;
+            //abc.TopLevel = false;
+
+            //pnlCenter.Controls.Add(abc);
+            //abc.Show();
         }
 
         private void btnBrand_Click(object sender, EventArgs e)
         {
             MovePanel(btnBrand);
             userControlDashboard1.Visible = false;
+            userControlCategory1.Visible = false;
             userControlBrand1.EmptyBox();
             userControlBrand1.Visible = true;
+            //pnlCenter.Controls.Clear();
+            //UserControlBrand abc = new UserControlBrand();
+
+            //pnlCenter.Controls.Add(abc);
+            //abc.Show();
         }
 
         private void btnCategory_Click(object sender, EventArgs e)
@@ -78,6 +92,8 @@ namespace Computer_Shop.PAL
             MovePanel(btnCategory);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.EmptyBox();
+            userControlCategory1.Visible = true;
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
@@ -85,6 +101,7 @@ namespace Computer_Shop.PAL
             MovePanel(btnProduct);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible=false;
         }
 
         private void btnOrders_Click(object sender, EventArgs e)
@@ -92,6 +109,7 @@ namespace Computer_Shop.PAL
             MovePanel(btnOrders);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
         }
 
         private void btnReport_Click(object sender, EventArgs e)
@@ -99,6 +117,7 @@ namespace Computer_Shop.PAL
             MovePanel(btnReport);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
@@ -106,11 +125,7 @@ namespace Computer_Shop.PAL
             MovePanel(btnUsers);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
-        }
-
-        private void userControlDashboard1_Load(object sender, EventArgs e)
-        {
-
+            userControlCategory1.Visible = false;
         }
     }
 }

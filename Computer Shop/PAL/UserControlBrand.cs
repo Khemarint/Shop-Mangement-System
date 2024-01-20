@@ -23,7 +23,7 @@ namespace Computer_Shop.PAL
         public void EmptyBox()
         {
             txtBrandName.Clear();
-            cmbStatus1.SelectedIndex = 0;
+            cmbStatus.SelectedIndex = 0;
         }
         private void EmptyBox1()
         {
@@ -46,7 +46,7 @@ namespace Computer_Shop.PAL
             }
             else if (cmbStatus.SelectedIndex == 0)
             {
-                MessageBox.Show("Please select status","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Please select status.","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 return; 
             }
             else
@@ -65,7 +65,7 @@ namespace Computer_Shop.PAL
         private void tpMangeBrand_Enter(object sender, EventArgs e)
         {
             txtBrandName.Clear();
-            dgvBrand.Columns[0].Visible = false;
+            dgvBrand.Columns[0].Visible = true;
             Computer.Computer.DisplayAndSearch("SELECT * FROM Brand; ", dgvBrand);
             lblTotal.Text = dgvBrand.Rows.Count.ToString();
         }
@@ -85,6 +85,7 @@ namespace Computer_Shop.PAL
                 txtBrandName1.Text = row.Cells[1].Value.ToString();
                 cmbStatus1.SelectedItem = row.Cells[2].Value.ToString();
                 tcBrand.SelectedTab = tpOptions;
+
             }
         }
 

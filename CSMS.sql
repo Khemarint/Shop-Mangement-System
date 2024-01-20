@@ -20,6 +20,15 @@ create table Brand
 	Constraint PK_Brand primary key (Brand_Id)
 );
 
+create table Category
+(
+	Category_Id INT IDENTITY(1,1),
+	Category_Name varchar(150) unique,
+	Category_Status varchar(15),
+	constraint PK_Category primary key (Category_Id)
+);
+
 
 select * from Users
 select * from Brand;
+select * from Category;

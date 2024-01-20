@@ -35,22 +35,22 @@
             this.lbForgetPassword = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2HtmlToolTip1 = new Guna.UI2.WinForms.Guna2HtmlToolTip();
-            this.picShow = new System.Windows.Forms.PictureBox();
-            this.picHide = new System.Windows.Forms.PictureBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.picShow = new System.Windows.Forms.PictureBox();
+            this.picHide = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -107,6 +107,26 @@
             // 
             this.guna2Elipse2.TargetControl = this.btnLogin;
             // 
+            // btnLogin
+            // 
+            this.btnLogin.AutoRoundedCorners = true;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
+            this.btnLogin.BorderColor = System.Drawing.Color.Transparent;
+            this.btnLogin.BorderRadius = 19;
+            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.Location = new System.Drawing.Point(110, 509);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(411, 41);
+            this.btnLogin.TabIndex = 19;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogIn_Click);
+            // 
             // guna2DragControl1
             // 
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
@@ -117,39 +137,6 @@
             // 
             this.guna2HtmlToolTip1.AllowLinksHandling = true;
             this.guna2HtmlToolTip1.MaximumSize = new System.Drawing.Size(0, 0);
-            // 
-            // picShow
-            // 
-            this.picShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.picShow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picShow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picShow.Image = global::Computer_Shop.Properties.Resources.Eye;
-            this.picShow.Location = new System.Drawing.Point(453, 381);
-            this.picShow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.picShow.Name = "picShow";
-            this.picShow.Size = new System.Drawing.Size(52, 32);
-            this.picShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picShow.TabIndex = 10;
-            this.picShow.TabStop = false;
-            this.guna2HtmlToolTip1.SetToolTip(this.picShow, "Show Password");
-            this.picShow.Click += new System.EventHandler(this.picShow_Click);
-            // 
-            // picHide
-            // 
-            this.picHide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.picHide.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picHide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picHide.Image = global::Computer_Shop.Properties.Resources.Closeeye;
-            this.picHide.Location = new System.Drawing.Point(453, 381);
-            this.picHide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.picHide.Name = "picHide";
-            this.picHide.Size = new System.Drawing.Size(52, 32);
-            this.picHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picHide.TabIndex = 9;
-            this.picHide.TabStop = false;
-            this.guna2HtmlToolTip1.SetToolTip(this.picHide, "Hide Password");
-            this.picHide.Visible = false;
-            this.picHide.Click += new System.EventHandler(this.picHide_Click);
             // 
             // txtPassword
             // 
@@ -193,6 +180,45 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(372, 5);
             this.guna2Panel2.TabIndex = 18;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.pictureBox2;
+            this.guna2DragControl2.UseTransparentDrag = true;
+            // 
+            // picShow
+            // 
+            this.picShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
+            this.picShow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picShow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picShow.Image = global::Computer_Shop.Properties.Resources.Eye;
+            this.picShow.Location = new System.Drawing.Point(453, 381);
+            this.picShow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.picShow.Name = "picShow";
+            this.picShow.Size = new System.Drawing.Size(52, 32);
+            this.picShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picShow.TabIndex = 10;
+            this.picShow.TabStop = false;
+            this.guna2HtmlToolTip1.SetToolTip(this.picShow, "Show Password");
+            this.picShow.Click += new System.EventHandler(this.picShow_Click);
+            // 
+            // picHide
+            // 
+            this.picHide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
+            this.picHide.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picHide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picHide.Image = global::Computer_Shop.Properties.Resources.Closeeye;
+            this.picHide.Location = new System.Drawing.Point(453, 381);
+            this.picHide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.picHide.Name = "picHide";
+            this.picHide.Size = new System.Drawing.Size(52, 32);
+            this.picHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHide.TabIndex = 9;
+            this.picHide.TabStop = false;
+            this.guna2HtmlToolTip1.SetToolTip(this.picHide, "Hide Password");
+            this.picHide.Visible = false;
+            this.picHide.Click += new System.EventHandler(this.picHide_Click);
             // 
             // pictureBox3
             // 
@@ -260,32 +286,6 @@
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox3.TabIndex = 13;
             this.guna2PictureBox3.TabStop = false;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.AutoRoundedCorners = true;
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.btnLogin.BorderColor = System.Drawing.Color.Transparent;
-            this.btnLogin.BorderRadius = 9;
-            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Location = new System.Drawing.Point(110, 509);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(411, 41);
-            this.btnLogin.TabIndex = 19;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.Click += new System.EventHandler(this.btnLogIn_Click);
-            // 
-            // guna2DragControl2
-            // 
-            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl2.TargetControl = this.pictureBox2;
-            this.guna2DragControl2.UseTransparentDrag = true;
             // 
             // FormLogin
             // 

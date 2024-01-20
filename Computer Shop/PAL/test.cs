@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Computer_Shop.PAL
 {
-    public partial class UserControlDashboard : UserControl
+    public partial class test : Form
     {
-        public UserControlDashboard()
+        public test()
         {
             InitializeComponent();
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

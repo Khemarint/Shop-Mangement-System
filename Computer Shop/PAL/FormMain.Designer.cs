@@ -46,9 +46,12 @@
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnlCenter = new Guna.UI2.WinForms.Guna2Panel();
+            this.userControlCategory1 = new Computer_Shop.PAL.UserControlCategory();
             this.userControlBrand1 = new Computer_Shop.PAL.UserControlBrand();
-            this.userControlDashboard1 = new Computer_Shop.PAL.UserControlDashboard();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.userControlDashboard1 = new Computer_Shop.PAL.UserControlDashboard();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -342,6 +345,7 @@
             this.pnlCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.pnlCenter.BorderRadius = 7;
             this.pnlCenter.BorderThickness = 6;
+            this.pnlCenter.Controls.Add(this.userControlCategory1);
             this.pnlCenter.Controls.Add(this.userControlBrand1);
             this.pnlCenter.Controls.Add(this.userControlDashboard1);
             this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -349,6 +353,16 @@
             this.pnlCenter.Name = "pnlCenter";
             this.pnlCenter.Size = new System.Drawing.Size(732, 700);
             this.pnlCenter.TabIndex = 0;
+            // 
+            // userControlCategory1
+            // 
+            this.userControlCategory1.BackColor = System.Drawing.Color.White;
+            this.userControlCategory1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlCategory1.Location = new System.Drawing.Point(0, 0);
+            this.userControlCategory1.Name = "userControlCategory1";
+            this.userControlCategory1.Size = new System.Drawing.Size(732, 700);
+            this.userControlCategory1.TabIndex = 0;
+            this.userControlCategory1.Visible = false;
             // 
             // userControlBrand1
             // 
@@ -360,14 +374,18 @@
             this.userControlBrand1.TabIndex = 0;
             this.userControlBrand1.Visible = false;
             // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.btnDashboard;
+            // 
             // userControlDashboard1
             // 
-            this.userControlDashboard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.userControlDashboard1.BackColor = System.Drawing.Color.DimGray;
             this.userControlDashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControlDashboard1.Location = new System.Drawing.Point(0, 0);
             this.userControlDashboard1.Name = "userControlDashboard1";
             this.userControlDashboard1.Size = new System.Drawing.Size(732, 700);
-            this.userControlDashboard1.TabIndex = 0;
+            this.userControlDashboard1.TabIndex = 1;
             // 
             // FormMain
             // 
@@ -413,7 +431,10 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private UserControlDashboard userControlDashboard1;
         private UserControlBrand userControlBrand1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private UserControlCategory userControlCategory1;
+        private UserControlDashboard userControlDashboard1;
     }
 }
