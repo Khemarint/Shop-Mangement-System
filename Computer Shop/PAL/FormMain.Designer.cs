@@ -116,7 +116,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Computer_Shop.Properties.Resources.favicon;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(72, 22);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(42, 42);
