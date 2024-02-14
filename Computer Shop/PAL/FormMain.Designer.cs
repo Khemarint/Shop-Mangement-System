@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -44,13 +45,18 @@
             this.btnCategory = new Guna.UI2.WinForms.Guna2Button();
             this.btnBrand = new Guna.UI2.WinForms.Guna2Button();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnlCenter = new Guna.UI2.WinForms.Guna2Panel();
-            this.userControlCategory1 = new Computer_Shop.PAL.UserControlCategory();
-            this.userControlBrand1 = new Computer_Shop.PAL.UserControlBrand();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.userControlUser1 = new Computer_Shop.PAL.UserControlUser();
+            this.userControlReport1 = new Computer_Shop.PAL.UserControlReport();
+            this.userControlOrder1 = new Computer_Shop.PAL.UserControlOrder();
+            this.userControlProduct1 = new Computer_Shop.PAL.UserControlProduct();
+            this.userControlCategory1 = new Computer_Shop.PAL.UserControlCategory();
+            this.userControlBrand1 = new Computer_Shop.PAL.UserControlBrand();
             this.userControlDashboard1 = new Computer_Shop.PAL.UserControlDashboard();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +67,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Black;
+            this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
@@ -74,29 +81,45 @@
             this.guna2Panel1.Controls.Add(this.btnCategory);
             this.guna2Panel1.Controls.Add(this.btnBrand);
             this.guna2Panel1.Controls.Add(this.btnDashboard);
+            this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(249, 700);
+            this.guna2Panel1.Size = new System.Drawing.Size(187, 700);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(7, 191);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "User :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(74, 24);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
+            this.label1.Location = new System.Drawing.Point(68, 69);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 28);
+            this.label1.Size = new System.Drawing.Size(49, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Computer Shop";
+            this.label1.Text = "Shop";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Computer_Shop.Properties.Resources.favicon;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(71, 22);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 52);
+            this.pictureBox1.Size = new System.Drawing.Size(42, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -107,10 +130,11 @@
             this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.DimGray;
             this.guna2CirclePictureBox1.Image = global::Computer_Shop.Properties.Resources.Admin;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(91, 92);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(68, 125);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(48, 52);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 1;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -120,25 +144,27 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(71, 159);
+            this.lblUsername.Location = new System.Drawing.Point(65, 191);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(32, 25);
+            this.lblUsername.Size = new System.Drawing.Size(26, 20);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "{?}";
             // 
             // pnlMove
             // 
             this.pnlMove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.pnlMove.Location = new System.Drawing.Point(2, 239);
+            this.pnlMove.Location = new System.Drawing.Point(2, 262);
+            this.pnlMove.Margin = new System.Windows.Forms.Padding(2);
             this.pnlMove.Name = "pnlMove";
-            this.pnlMove.Size = new System.Drawing.Size(6, 49);
+            this.pnlMove.Size = new System.Drawing.Size(4, 40);
             this.pnlMove.TabIndex = 0;
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnClose.AutoRoundedCorners = true;
-            this.btnClose.BorderRadius = 21;
+            this.btnClose.BorderRadius = 17;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -152,10 +178,11 @@
             this.btnClose.HoverState.Image = global::Computer_Shop.Properties.Resources.er;
             this.btnClose.Image = global::Computer_Shop.Properties.Resources.Logout;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(3, 641);
+            this.btnClose.Location = new System.Drawing.Point(2, 652);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnClose.Size = new System.Drawing.Size(240, 45);
+            this.btnClose.Size = new System.Drawing.Size(180, 37);
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = " Log out";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -163,7 +190,7 @@
             // btnUsers
             // 
             this.btnUsers.AutoRoundedCorners = true;
-            this.btnUsers.BorderRadius = 21;
+            this.btnUsers.BorderRadius = 17;
             this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -177,10 +204,11 @@
             this.btnUsers.HoverState.Image = global::Computer_Shop.Properties.Resources.z;
             this.btnUsers.Image = global::Computer_Shop.Properties.Resources.User;
             this.btnUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnUsers.Location = new System.Drawing.Point(3, 545);
+            this.btnUsers.Location = new System.Drawing.Point(2, 511);
+            this.btnUsers.Margin = new System.Windows.Forms.Padding(2);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.btnUsers.Size = new System.Drawing.Size(240, 45);
+            this.btnUsers.Size = new System.Drawing.Size(180, 37);
             this.btnUsers.TabIndex = 0;
             this.btnUsers.Text = " Users";
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
@@ -188,7 +216,7 @@
             // btnReport
             // 
             this.btnReport.AutoRoundedCorners = true;
-            this.btnReport.BorderRadius = 21;
+            this.btnReport.BorderRadius = 17;
             this.btnReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -202,10 +230,11 @@
             this.btnReport.HoverState.Image = global::Computer_Shop.Properties.Resources.u;
             this.btnReport.Image = global::Computer_Shop.Properties.Resources.Report;
             this.btnReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnReport.Location = new System.Drawing.Point(3, 494);
+            this.btnReport.Location = new System.Drawing.Point(2, 469);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnReport.Name = "btnReport";
             this.btnReport.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.btnReport.Size = new System.Drawing.Size(240, 45);
+            this.btnReport.Size = new System.Drawing.Size(180, 37);
             this.btnReport.TabIndex = 0;
             this.btnReport.Text = " Report";
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
@@ -213,7 +242,7 @@
             // btnOrders
             // 
             this.btnOrders.AutoRoundedCorners = true;
-            this.btnOrders.BorderRadius = 21;
+            this.btnOrders.BorderRadius = 17;
             this.btnOrders.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOrders.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnOrders.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -227,10 +256,11 @@
             this.btnOrders.HoverState.Image = global::Computer_Shop.Properties.Resources.o;
             this.btnOrders.Image = global::Computer_Shop.Properties.Resources.Order;
             this.btnOrders.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnOrders.Location = new System.Drawing.Point(3, 443);
+            this.btnOrders.Location = new System.Drawing.Point(2, 428);
+            this.btnOrders.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.btnOrders.Size = new System.Drawing.Size(240, 45);
+            this.btnOrders.Size = new System.Drawing.Size(180, 37);
             this.btnOrders.TabIndex = 0;
             this.btnOrders.Text = " Orders";
             this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
@@ -238,7 +268,7 @@
             // btnProduct
             // 
             this.btnProduct.AutoRoundedCorners = true;
-            this.btnProduct.BorderRadius = 21;
+            this.btnProduct.BorderRadius = 17;
             this.btnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -252,10 +282,11 @@
             this.btnProduct.HoverState.Image = global::Computer_Shop.Properties.Resources.p;
             this.btnProduct.Image = global::Computer_Shop.Properties.Resources.Product;
             this.btnProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnProduct.Location = new System.Drawing.Point(3, 392);
+            this.btnProduct.Location = new System.Drawing.Point(2, 386);
+            this.btnProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.btnProduct.Size = new System.Drawing.Size(240, 45);
+            this.btnProduct.Size = new System.Drawing.Size(180, 37);
             this.btnProduct.TabIndex = 0;
             this.btnProduct.Text = " Products";
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
@@ -263,7 +294,7 @@
             // btnCategory
             // 
             this.btnCategory.AutoRoundedCorners = true;
-            this.btnCategory.BorderRadius = 21;
+            this.btnCategory.BorderRadius = 17;
             this.btnCategory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCategory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCategory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -277,10 +308,11 @@
             this.btnCategory.HoverState.Image = global::Computer_Shop.Properties.Resources.Category1;
             this.btnCategory.Image = global::Computer_Shop.Properties.Resources.cb;
             this.btnCategory.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCategory.Location = new System.Drawing.Point(3, 341);
+            this.btnCategory.Location = new System.Drawing.Point(2, 345);
+            this.btnCategory.Margin = new System.Windows.Forms.Padding(2);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.btnCategory.Size = new System.Drawing.Size(240, 45);
+            this.btnCategory.Size = new System.Drawing.Size(180, 37);
             this.btnCategory.TabIndex = 0;
             this.btnCategory.Text = " Category";
             this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
@@ -288,7 +320,7 @@
             // btnBrand
             // 
             this.btnBrand.AutoRoundedCorners = true;
-            this.btnBrand.BorderRadius = 21;
+            this.btnBrand.BorderRadius = 17;
             this.btnBrand.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBrand.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBrand.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -302,10 +334,11 @@
             this.btnBrand.HoverState.Image = global::Computer_Shop.Properties.Resources.Black;
             this.btnBrand.Image = global::Computer_Shop.Properties.Resources.Brand;
             this.btnBrand.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBrand.Location = new System.Drawing.Point(3, 290);
+            this.btnBrand.Location = new System.Drawing.Point(2, 304);
+            this.btnBrand.Margin = new System.Windows.Forms.Padding(2);
             this.btnBrand.Name = "btnBrand";
             this.btnBrand.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.btnBrand.Size = new System.Drawing.Size(243, 45);
+            this.btnBrand.Size = new System.Drawing.Size(182, 37);
             this.btnBrand.TabIndex = 0;
             this.btnBrand.Text = "Brand";
             this.btnBrand.Click += new System.EventHandler(this.btnBrand_Click);
@@ -314,7 +347,7 @@
             // 
             this.btnDashboard.AutoRoundedCorners = true;
             this.btnDashboard.BackColor = System.Drawing.Color.Black;
-            this.btnDashboard.BorderRadius = 21;
+            this.btnDashboard.BorderRadius = 17;
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -328,13 +361,25 @@
             this.btnDashboard.HoverState.Image = global::Computer_Shop.Properties.Resources.Homeblack;
             this.btnDashboard.Image = global::Computer_Shop.Properties.Resources.Dashboard;
             this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDashboard.Location = new System.Drawing.Point(3, 239);
+            this.btnDashboard.Location = new System.Drawing.Point(2, 262);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.btnDashboard.Size = new System.Drawing.Size(243, 45);
+            this.btnDashboard.Size = new System.Drawing.Size(182, 37);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
+            this.label3.Location = new System.Drawing.Point(27, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 28);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Management System";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Elipse1
             // 
@@ -345,58 +390,104 @@
             this.pnlCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.pnlCenter.BorderRadius = 7;
             this.pnlCenter.BorderThickness = 6;
+            this.pnlCenter.Controls.Add(this.userControlUser1);
+            this.pnlCenter.Controls.Add(this.userControlReport1);
+            this.pnlCenter.Controls.Add(this.userControlOrder1);
+            this.pnlCenter.Controls.Add(this.userControlProduct1);
             this.pnlCenter.Controls.Add(this.userControlCategory1);
             this.pnlCenter.Controls.Add(this.userControlBrand1);
             this.pnlCenter.Controls.Add(this.userControlDashboard1);
             this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCenter.Location = new System.Drawing.Point(249, 0);
+            this.pnlCenter.Location = new System.Drawing.Point(187, 0);
+            this.pnlCenter.Margin = new System.Windows.Forms.Padding(2);
             this.pnlCenter.Name = "pnlCenter";
-            this.pnlCenter.Size = new System.Drawing.Size(732, 700);
+            this.pnlCenter.Size = new System.Drawing.Size(793, 700);
             this.pnlCenter.TabIndex = 0;
-            // 
-            // userControlCategory1
-            // 
-            this.userControlCategory1.BackColor = System.Drawing.Color.White;
-            this.userControlCategory1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlCategory1.Location = new System.Drawing.Point(0, 0);
-            this.userControlCategory1.Name = "userControlCategory1";
-            this.userControlCategory1.Size = new System.Drawing.Size(732, 700);
-            this.userControlCategory1.TabIndex = 0;
-            this.userControlCategory1.Visible = false;
-            // 
-            // userControlBrand1
-            // 
-            this.userControlBrand1.BackColor = System.Drawing.Color.White;
-            this.userControlBrand1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlBrand1.Location = new System.Drawing.Point(0, 0);
-            this.userControlBrand1.Name = "userControlBrand1";
-            this.userControlBrand1.Size = new System.Drawing.Size(732, 700);
-            this.userControlBrand1.TabIndex = 0;
-            this.userControlBrand1.Visible = false;
             // 
             // guna2Elipse2
             // 
             this.guna2Elipse2.TargetControl = this.btnDashboard;
             // 
+            // userControlUser1
+            // 
+            this.userControlUser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlUser1.Location = new System.Drawing.Point(0, 0);
+            this.userControlUser1.Name = "userControlUser1";
+            this.userControlUser1.Size = new System.Drawing.Size(793, 700);
+            this.userControlUser1.TabIndex = 0;
+            this.userControlUser1.Visible = false;
+            // 
+            // userControlReport1
+            // 
+            this.userControlReport1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlReport1.Location = new System.Drawing.Point(0, 0);
+            this.userControlReport1.Name = "userControlReport1";
+            this.userControlReport1.Size = new System.Drawing.Size(793, 700);
+            this.userControlReport1.TabIndex = 0;
+            this.userControlReport1.Visible = false;
+            // 
+            // userControlOrder1
+            // 
+            this.userControlOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlOrder1.Location = new System.Drawing.Point(0, 0);
+            this.userControlOrder1.Name = "userControlOrder1";
+            this.userControlOrder1.Size = new System.Drawing.Size(793, 700);
+            this.userControlOrder1.TabIndex = 0;
+            this.userControlOrder1.Visible = false;
+            // 
+            // userControlProduct1
+            // 
+            this.userControlProduct1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlProduct1.Location = new System.Drawing.Point(0, 0);
+            this.userControlProduct1.Margin = new System.Windows.Forms.Padding(2);
+            this.userControlProduct1.Name = "userControlProduct1";
+            this.userControlProduct1.Size = new System.Drawing.Size(793, 700);
+            this.userControlProduct1.TabIndex = 0;
+            this.userControlProduct1.Visible = false;
+            // 
+            // userControlCategory1
+            // 
+            this.userControlCategory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.userControlCategory1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlCategory1.Location = new System.Drawing.Point(0, 0);
+            this.userControlCategory1.Margin = new System.Windows.Forms.Padding(2);
+            this.userControlCategory1.Name = "userControlCategory1";
+            this.userControlCategory1.Size = new System.Drawing.Size(793, 700);
+            this.userControlCategory1.TabIndex = 0;
+            this.userControlCategory1.Visible = false;
+            // 
+            // userControlBrand1
+            // 
+            this.userControlBrand1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.userControlBrand1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlBrand1.Location = new System.Drawing.Point(0, 0);
+            this.userControlBrand1.Margin = new System.Windows.Forms.Padding(2);
+            this.userControlBrand1.Name = "userControlBrand1";
+            this.userControlBrand1.Size = new System.Drawing.Size(793, 700);
+            this.userControlBrand1.TabIndex = 0;
+            this.userControlBrand1.Visible = false;
+            // 
             // userControlDashboard1
             // 
-            this.userControlDashboard1.BackColor = System.Drawing.Color.DimGray;
+            this.userControlDashboard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.userControlDashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControlDashboard1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDashboard1.Margin = new System.Windows.Forms.Padding(2);
             this.userControlDashboard1.Name = "userControlDashboard1";
-            this.userControlDashboard1.Size = new System.Drawing.Size(732, 700);
+            this.userControlDashboard1.Size = new System.Drawing.Size(793, 700);
             this.userControlDashboard1.TabIndex = 1;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(981, 700);
+            this.ClientSize = new System.Drawing.Size(980, 700);
             this.Controls.Add(this.pnlCenter);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Shop Management Shop";
@@ -436,5 +527,11 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private UserControlCategory userControlCategory1;
         private UserControlDashboard userControlDashboard1;
+        private UserControlProduct userControlProduct1;
+        private System.Windows.Forms.Label label3;
+        private UserControlOrder userControlOrder1;
+        private UserControlReport userControlReport1;
+        private UserControlUser userControlUser1;
+        private System.Windows.Forms.Label label2;
     }
 }

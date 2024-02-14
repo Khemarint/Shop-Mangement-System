@@ -12,6 +12,9 @@ create table Users
 INSERT INTO Users VALUES 
 	('Khemairnt','Khemarint@gmail.com','44445555');
 
+INSERT INTO Users VALUES 
+	('Khemarint','Khemarint@gmail.com','123');
+
 create table Brand 
 (
 	Brand_Id int identity(1,1),
@@ -29,6 +32,45 @@ create table Category
 );
 
 
+create table Product
+(	
+	Product_Id int identity(1,1),
+	Product_Name varchar(150) unique,
+	Product_Image image,
+	Product_Rate int,
+	Product_Quantity int,
+	Product_Brand varchar(150),
+	Product_Category varchar(150),
+	Product_Status varchar(15),
+	Constraint PK_Product primary key (product_Id)
+);
+
+create table Orders
+(
+	Orders_Id int identity(1,1),
+	Orders_Date Date,
+	Customer_Name varchar(150),
+	Customer_Number varchar(150) unique,
+	Total_Amount int,
+	Paid_Amount int,
+	Due_Amount int,
+	Discount int,
+	Grand_Total int,
+	Payment_Status varchar(50),
+	constraint Pk_Orders primary key (Orders_Id)
+
+)
+
+create procedure GetOrdersReport (@StartDate Date, @EndDate Date) 
+as 
+select Orders_Id, Orders_Date, Customer_Name, Customer_Number, Grand_Total
+from Orders
+where Orders_Date between @StartDate and @EndDate
+order by Orders_Date ASC;
+
+
 select * from Users
 select * from Brand;
 select * from Category;
+select * from Product;
+select * from Orders;

@@ -60,11 +60,12 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.label1.Location = new System.Drawing.Point(50, 11);
+            this.label1.Location = new System.Drawing.Point(38, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(354, 19);
+            this.label1.Size = new System.Drawing.Size(239, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Computer Shop Management System | Forgot Password";
+            this.label1.Text = "Shop Management System | Forgot Password";
             // 
             // guna2HtmlToolTip1
             // 
@@ -75,9 +76,10 @@
             // 
             this.picClose.BackColor = System.Drawing.Color.White;
             this.picClose.Image = global::Computer_Shop.Properties.Resources.Close;
-            this.picClose.Location = new System.Drawing.Point(594, 4);
+            this.picClose.Location = new System.Drawing.Point(446, 3);
+            this.picClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(32, 35);
+            this.picClose.Size = new System.Drawing.Size(24, 28);
             this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picClose.TabIndex = 18;
             this.picClose.TabStop = false;
@@ -97,17 +99,19 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(123, 435);
+            this.guna2Panel2.Location = new System.Drawing.Point(92, 353);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(382, 5);
+            this.guna2Panel2.Size = new System.Drawing.Size(286, 4);
             this.guna2Panel2.TabIndex = 36;
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(126, 354);
+            this.guna2Panel1.Location = new System.Drawing.Point(94, 288);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(380, 5);
+            this.guna2Panel1.Size = new System.Drawing.Size(285, 4);
             this.guna2Panel1.TabIndex = 35;
             // 
             // txtEmail
@@ -115,10 +119,11 @@
             this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(167, 400);
+            this.txtEmail.Location = new System.Drawing.Point(125, 325);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(338, 32);
+            this.txtEmail.Size = new System.Drawing.Size(254, 27);
             this.txtEmail.TabIndex = 33;
             this.txtEmail.TabStop = false;
             this.txtEmail.Text = "Email";
@@ -129,10 +134,11 @@
             this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtUsername.ForeColor = System.Drawing.Color.White;
-            this.txtUsername.Location = new System.Drawing.Point(167, 318);
+            this.txtUsername.Location = new System.Drawing.Point(125, 258);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(338, 32);
+            this.txtUsername.Size = new System.Drawing.Size(254, 27);
             this.txtUsername.TabIndex = 30;
             this.txtUsername.Text = "Username";
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
@@ -141,9 +147,10 @@
             // 
             this.guna2PictureBox1.Image = global::Computer_Shop.Properties.Resources.avatar;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(107, 317);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(80, 258);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(75, 32);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(56, 26);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 31;
             this.guna2PictureBox1.TabStop = false;
@@ -152,9 +159,10 @@
             // 
             this.guna2PictureBox4.Image = global::Computer_Shop.Properties.Resources.email;
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(105, 399);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(79, 324);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(75, 32);
+            this.guna2PictureBox4.Size = new System.Drawing.Size(56, 26);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox4.TabIndex = 32;
             this.guna2PictureBox4.TabStop = false;
@@ -162,10 +170,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Computer_Shop.Properties.Resources.Forget;
-            this.pictureBox3.Location = new System.Drawing.Point(214, 61);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(160, 50);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox3.Size = new System.Drawing.Size(150, 162);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
@@ -174,10 +182,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::Computer_Shop.Properties.Resources.favicon;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(26, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -187,8 +195,9 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(638, 40);
+            this.pictureBox2.Size = new System.Drawing.Size(478, 32);
             this.pictureBox2.TabIndex = 29;
             this.pictureBox2.TabStop = false;
             // 
@@ -197,7 +206,7 @@
             this.btnResetPassword.AutoRoundedCorners = true;
             this.btnResetPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
             this.btnResetPassword.BorderColor = System.Drawing.Color.Transparent;
-            this.btnResetPassword.BorderRadius = 19;
+            this.btnResetPassword.BorderRadius = 15;
             this.btnResetPassword.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnResetPassword.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnResetPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -205,9 +214,10 @@
             this.btnResetPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
             this.btnResetPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetPassword.ForeColor = System.Drawing.Color.Black;
-            this.btnResetPassword.Location = new System.Drawing.Point(113, 497);
+            this.btnResetPassword.Location = new System.Drawing.Point(85, 404);
+            this.btnResetPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.Size = new System.Drawing.Size(411, 41);
+            this.btnResetPassword.Size = new System.Drawing.Size(308, 33);
             this.btnResetPassword.TabIndex = 38;
             this.btnResetPassword.Text = "Show Password";
             this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
@@ -220,10 +230,10 @@
             // 
             // FormForgotPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.ClientSize = new System.Drawing.Size(638, 607);
+            this.ClientSize = new System.Drawing.Size(478, 493);
             this.Controls.Add(this.btnResetPassword);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
@@ -238,6 +248,7 @@
             this.Controls.Add(this.guna2PictureBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormForgotPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Shop Management System | Forgot Password";

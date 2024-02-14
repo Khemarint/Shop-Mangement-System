@@ -14,7 +14,7 @@ namespace Computer_Shop.PAL
 {
     public partial class UserControlBrand : UserControl
     {
-        private string Id = "";
+        private string id = "";
         public UserControlBrand()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace Computer_Shop.PAL
         {
             txtBrandName.Clear();
             cmbStatus1.SelectedIndex = 0;
-            Id = "";
+            id = "";
         }
 
         private void picSearch_MouseHover(object sender, EventArgs e)
@@ -65,9 +65,11 @@ namespace Computer_Shop.PAL
         private void tpMangeBrand_Enter(object sender, EventArgs e)
         {
             txtBrandName.Clear();
-            dgvBrand.Columns[0].Visible = true;
             Computer.Computer.DisplayAndSearch("SELECT * FROM Brand; ", dgvBrand);
             lblTotal.Text = dgvBrand.Rows.Count.ToString();
+            dgvBrand.Columns["Brand_Id"].DisplayIndex = 0;
+            dgvBrand.Columns[0].Visible = false;
+
         }
 
         private void txtSearchBrandName_TextChanged(object sender, EventArgs e)
@@ -81,7 +83,7 @@ namespace Computer_Shop.PAL
             if(e.RowIndex !=-1) 
             {
                 DataGridViewRow row = dgvBrand.Rows[e.RowIndex];
-                Id = row.Cells[0].Value.ToString();
+                id = row.Cells[0].Value.ToString();
                 txtBrandName1.Text = row.Cells[1].Value.ToString();
                 cmbStatus1.SelectedItem = row.Cells[2].Value.ToString();
                 tcBrand.SelectedTab = tpOptions;
@@ -91,7 +93,7 @@ namespace Computer_Shop.PAL
 
         private void btnChange_Click(object sender, EventArgs e)
         {
-            if(Id == "")
+            if(id == "")
             {
                 MessageBox.Show("First selct row form table.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -109,7 +111,7 @@ namespace Computer_Shop.PAL
             else
             {
                 Brand brand = new Brand(txtBrandName1.Text.Trim(), cmbStatus1.SelectedItem.ToString());
-                Computer.Computer.ChangeBrand(brand,Id);
+                Computer.Computer.ChangeBrand(brand,id);
                 EmptyBox1();
                 tcBrand.SelectedTab = tpMangeBrand;
             }
@@ -117,7 +119,7 @@ namespace Computer_Shop.PAL
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            if (Id == "")
+            if (id == "")
             {
                 MessageBox.Show("First selct row form table.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -137,7 +139,7 @@ namespace Computer_Shop.PAL
                 DialogResult dialogResult = MessageBox.Show("Are you want to delete this brand?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if(dialogResult == DialogResult.Yes)
                 {
-                    Computer.Computer.RemoveBrand(Id);
+                    Computer.Computer.RemoveBrand(id);
                     EmptyBox1();
                     tcBrand.SelectedTab = tpMangeBrand;
                 }
@@ -146,7 +148,7 @@ namespace Computer_Shop.PAL
 
         private void tpOptions_Enter(object sender, EventArgs e)
         {
-            if (Id == "")
+            if (id == "")
             {
                 tcBrand.SelectedTab = tpMangeBrand;
             }

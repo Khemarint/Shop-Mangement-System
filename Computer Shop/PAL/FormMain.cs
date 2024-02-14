@@ -64,6 +64,9 @@ namespace Computer_Shop.PAL
             userControlBrand1.Visible = false;
             userControlDashboard1.Visible = true;
             userControlCategory1.Visible = false;
+            userControlProduct1.Visible = false;
+            userControlOrder1.Visible = false;
+            userControlReport1.Visible = false;
             //pnlCenter.Controls.Clear();
             //test abc = new test();
             //abc.TopMost = true;
@@ -71,6 +74,8 @@ namespace Computer_Shop.PAL
 
             //pnlCenter.Controls.Add(abc);
             //abc.Show();
+            userControlUser1.Visible = false;
+            userControlDashboard1.Count();
         }
 
         private void btnBrand_Click(object sender, EventArgs e)
@@ -80,6 +85,11 @@ namespace Computer_Shop.PAL
             userControlCategory1.Visible = false;
             userControlBrand1.EmptyBox();
             userControlBrand1.Visible = true;
+            userControlProduct1.Visible = false;
+            userControlOrder1.Visible = false;
+            userControlReport1.Visible = false; 
+            userControlUser1.Visible = false;   
+
             //pnlCenter.Controls.Clear();
             //UserControlBrand abc = new UserControlBrand();
 
@@ -94,6 +104,11 @@ namespace Computer_Shop.PAL
             userControlBrand1.Visible = false;
             userControlCategory1.EmptyBox();
             userControlCategory1.Visible = true;
+            userControlProduct1.Visible = false;
+            userControlOrder1.Visible = false;
+            userControlReport1.Visible = false;
+            userControlUser1.Visible = false;
+
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
@@ -102,6 +117,12 @@ namespace Computer_Shop.PAL
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
             userControlCategory1.Visible=false;
+            userControlProduct1.EmptyBox();
+            userControlProduct1.Visible=true;
+            userControlOrder1.Visible = false;
+            userControlReport1.Visible=false;
+            userControlUser1.Visible = false;
+
         }
 
         private void btnOrders_Click(object sender, EventArgs e)
@@ -110,6 +131,12 @@ namespace Computer_Shop.PAL
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
             userControlCategory1.Visible = false;
+            userControlProduct1.Visible = false;
+            userControlOrder1.Visible = true;
+            userControlOrder1.EmptyBox();
+            userControlReport1.Visible = false;
+            userControlUser1.Visible = false;
+
         }
 
         private void btnReport_Click(object sender, EventArgs e)
@@ -118,6 +145,10 @@ namespace Computer_Shop.PAL
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
             userControlCategory1.Visible = false;
+            userControlProduct1.Visible=false;
+            userControlOrder1.Visible = false;
+            userControlReport1.Visible = true;
+            userControlUser1.Visible = false;
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
@@ -126,6 +157,13 @@ namespace Computer_Shop.PAL
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
             userControlCategory1.Visible = false;
+            userControlProduct1.Visible=false;
+            userControlOrder1.Visible = false;
+            userControlReport1.Visible = false;
+            userControlUser1.Visible = true ;
+            userControlUser1.EmptyBox();   
         }
+
+   
     }
 }

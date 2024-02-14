@@ -38,25 +38,25 @@
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2HtmlToolTip1 = new Guna.UI2.WinForms.Guna2HtmlToolTip();
+            this.picShow = new System.Windows.Forms.PictureBox();
+            this.picHide = new System.Windows.Forms.PictureBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.picShow = new System.Windows.Forms.PictureBox();
-            this.picHide = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -69,9 +69,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(50, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 19);
+            this.label1.Size = new System.Drawing.Size(184, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Computer Shop Management System | Login";
+            this.label1.Text = " Shop Management System | Login";
             // 
             // txtUsername
             // 
@@ -138,55 +138,6 @@
             this.guna2HtmlToolTip1.AllowLinksHandling = true;
             this.guna2HtmlToolTip1.MaximumSize = new System.Drawing.Size(0, 0);
             // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.ForeColor = System.Drawing.Color.White;
-            this.txtPassword.Location = new System.Drawing.Point(170, 382);
-            this.txtPassword.Multiline = true;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(282, 32);
-            this.txtPassword.TabIndex = 14;
-            this.txtPassword.TabStop = false;
-            this.txtPassword.Text = "Password";
-            this.txtPassword.UseSystemPasswordChar = true;
-            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Castellar", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.label2.Location = new System.Drawing.Point(244, 231);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 52);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Login";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(131, 346);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(373, 5);
-            this.guna2Panel1.TabIndex = 17;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(132, 420);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(372, 5);
-            this.guna2Panel2.TabIndex = 18;
-            // 
-            // guna2DragControl2
-            // 
-            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl2.TargetControl = this.pictureBox2;
-            this.guna2DragControl2.UseTransparentDrag = true;
-            // 
             // picShow
             // 
             this.picShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
@@ -219,6 +170,65 @@
             this.guna2HtmlToolTip1.SetToolTip(this.picHide, "Hide Password");
             this.picHide.Visible = false;
             this.picHide.Click += new System.EventHandler(this.picHide_Click);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.White;
+            this.txtPassword.Location = new System.Drawing.Point(170, 382);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(282, 32);
+            this.txtPassword.TabIndex = 14;
+            this.txtPassword.TabStop = false;
+            this.txtPassword.Text = "Password";
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Castellar", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
+            this.label2.Location = new System.Drawing.Point(244, 231);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 42);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Login";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
+            this.guna2Panel1.Location = new System.Drawing.Point(131, 346);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(373, 5);
+            this.guna2Panel1.TabIndex = 17;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
+            this.guna2Panel2.Location = new System.Drawing.Point(132, 420);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(372, 5);
+            this.guna2Panel2.TabIndex = 18;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.pictureBox2;
+            this.guna2DragControl2.UseTransparentDrag = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(638, 40);
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -255,16 +265,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(638, 40);
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Image = global::Computer_Shop.Properties.Resources.avatar;
@@ -289,7 +289,7 @@
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 11F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(638, 607);
@@ -319,10 +319,10 @@
             this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);

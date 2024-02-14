@@ -332,21 +332,24 @@ namespace Computer
 			connection.Close();
 		}
 
-		// Token: 0x06000019 RID: 25 RVA: 0x00002B1C File Offset: 0x00000D1C
-		public static void BrandCategoryProduct(string query, ComboBox cb)
-		{
-			SqlConnection connection = Computer.GetConnection();
-			SqlCommand sqlCommand = new SqlCommand(query, connection);
-			SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-			while (sqlDataReader.Read())
-			{
-				cb.Items.Add(sqlDataReader[0]);
-			}
-			connection.Close();
-		}
+        // Token: 0x06000019 RID: 25 RVA: 0x00002B1C File Offset: 0x00000D1C
 
-		// Token: 0x0600001A RID: 26 RVA: 0x00002B68 File Offset: 0x00000D68
-		public static void AddUser(User user)
+        public static void BrandCategoryProduct(string query, ComboBox cb)
+        {
+            SqlConnection connection = Computer.GetConnection();
+            SqlCommand sqlCommand = new SqlCommand(query, connection);
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            while (sqlDataReader.Read())
+            {
+                cb.Items.Add(sqlDataReader[0]);
+            }
+            connection.Close();
+        }
+
+
+
+        // Token: 0x0600001A RID: 26 RVA: 0x00002B68 File Offset: 0x00000D68
+        public static void AddUser(User user)
 		{
 			string cmdText = "INSERT INTO Users VALUES (@Name, @Email, @Password);";
 			SqlConnection connection = Computer.GetConnection();

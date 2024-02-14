@@ -69,9 +69,8 @@ namespace Computer_Shop.PAL
             txtSearchCategoryName.Clear();
             Computer.Computer.DisplayAndSearch("SELECT * FROM Category;", dgvCategory);
             lblTotal.Text = dgvCategory.Rows.Count.ToString();
-            dgvCategory.Columns[0].Visible = false;
             dgvCategory.Columns["Category_Id"].DisplayIndex = 0;
-
+            dgvCategory.Columns[0].Visible = false;
 
         }
 
@@ -102,7 +101,7 @@ namespace Computer_Shop.PAL
                 MessageBox.Show("Please select row from table.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            else if (txtCategoryName1.Text.Trim().Length == 0)
+            else if (txtCategoryName1.Text.Trim() == string.Empty)
             {
                 MessageBox.Show("Please enter category name.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -114,7 +113,7 @@ namespace Computer_Shop.PAL
             }
             else
             {
-                Category category = new Category(txtCategoryName1.Text.Trim(), cmbStatus1.SelectedIndex.ToString());
+                Category category = new Category(txtCategoryName1.Text.Trim(), cmbStatus1.SelectedItem.ToString());
                 Computer.Computer.ChangeCategory(category, id);
                 EmptyBox1();
                 tcCategory.SelectedTab = tpManageCategory;
