@@ -3,8 +3,6 @@
 ## Description
 This project is a shop management system built with C# in Microsoft Visual Studio Code. It is designed to help manage the day-to-day operations of a shop, including inventory management, sales tracking, and more.
 
-<img src="https://example.com/path/to/image.png" alt="Alt text">
-
 ## Features
 - **Dashboard**: Provides an overview of the shop's performance.
 - **Brand**: Manage the different brands of products in the shop.
@@ -18,3 +16,5 @@ This project is a shop management system built with C# in Microsoft Visual Studi
 1. Ensure you have Microsoft Visual Studio Code installed.
 2. Clone the repository: `git clone https://github.com/yourusername/shop-management-system.git`
 3. Open the project in Visual Studio Code.
+
+<img src="https://github.com/Khemarint/Shop-Mangement-System/blob/master/Images/shop.jpg" alt="Dashboard">
