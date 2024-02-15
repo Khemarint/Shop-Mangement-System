@@ -89,7 +89,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(258, 20);
             this.txtUsername.TabIndex = 1;
-            this.txtUsername.Text = "JohnDoe";
+            this.txtUsername.Text = "Khemarint";
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
             // 
             // lbForgetPassword

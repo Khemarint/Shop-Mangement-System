@@ -22,7 +22,7 @@ namespace Computer_Shop.PAL
      
         private void txtUsername_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "JohnDoe")
+            if (txtUsername.Text == "Khemarint")
             {
                 txtUsername.Text = "";
             }
@@ -30,7 +30,7 @@ namespace Computer_Shop.PAL
 
         private void txtEmail_Click(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "johndoe@example.com")
+            if (txtEmail.Text == "Khemarint@gmail.com")
             {
                 txtEmail.Text = "";
             }

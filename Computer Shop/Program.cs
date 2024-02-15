@@ -21,9 +21,12 @@ namespace Computer_Shop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            FormLogin loginForm = new FormLogin();
+            FormLogin loginForm = null;
+            FormMain mainForm = null;
+
             while (true)
             {
+                loginForm = new FormLogin();
                 if (loginForm.ShowDialog() == DialogResult.OK)
                 {
                     DataRow userDetails = loginForm.GetUserDetails();
@@ -35,13 +38,15 @@ namespace Computer_Shop
                         byte[] userImage = (byte[])userDetails["User_Image"];
 
                         // Create an instance of the main form
-                        FormMain mainForm = new FormMain(userName, userGender, userEmail, userImage); // Pass 'userImage' here
+                        mainForm = new FormMain(userName, userGender, userEmail, userImage); // Pass 'userImage' here
+
+                        // Close the login form
+                        loginForm.Close();
 
                         // Show the main form
                         if (mainForm.ShowDialog() == DialogResult.OK)
                         {
                             // Log out and show the login form again
-                            loginForm = new FormLogin();
                             continue;
                         }
                         else
@@ -58,6 +63,7 @@ namespace Computer_Shop
                 }
             }
         }
+
 
 
 

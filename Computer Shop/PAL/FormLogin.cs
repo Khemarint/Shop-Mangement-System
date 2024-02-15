@@ -29,7 +29,7 @@ namespace Computer_Shop.PAL
 
         private void txtUsername_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "JohnDoe")
+            if (txtUsername.Text == "Khemarint")
             {
                 txtUsername.Text = "";
             }
@@ -115,23 +115,19 @@ namespace Computer_Shop.PAL
                     {
                         // Open the admin form
                         AdminForm adminForm = new AdminForm(userName, userGender, userEmail,userImage);
-                        adminForm.Show();
+                        this.Hide();  
+                        adminForm.ShowDialog();
+                        this.Show();    
                     }
                     else
                     {
                         // Create an instance of the main form
                         FormMain formMain = new FormMain(userName, userGender, userEmail,userImage);
-
-                        // Hide the login form
                         this.Hide();
-
-                        // Show the main form
                         formMain.ShowDialog();
-
-                        // Close the login form
                         this.Show();
-
                     }
+                    
                 }
                 else
                 {
