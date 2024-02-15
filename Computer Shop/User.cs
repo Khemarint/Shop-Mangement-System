@@ -1,26 +1,29 @@
 ﻿using System;
 
-namespace Computer
+public class User
 {
-	public class User
-	{
-		// Token: 0x17000015 RID: 21
-		// (get) Token: 0x06000044 RID: 68 RVA: 0x00003441 File Offset: 0x00001641
-		// (set) Token: 0x06000045 RID: 69 RVA: 0x00003449 File Offset: 0x00001649
-		public string Name { get; set; }
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public string Password { get; set; } 
+    public string Address { get; set; }
+    public DateTime DateOfBirth { get; set; }
+    public string Gender { get; set; }
+    public string PhoneNumber { get; set; }
+    public bool? IsAdmin { get; set; }
+    public byte[] Image { get; set; } 
 
-		// Token: 0x17000016 RID: 22
-		// (get) Token: 0x06000046 RID: 70 RVA: 0x00003452 File Offset: 0x00001652
-		// (set) Token: 0x06000047 RID: 71 RVA: 0x0000345A File Offset: 0x0000165A
-		public string Email { get; set; }
-		public string Password { get; set; }
-
-		// Token: 0x0600004A RID: 74 RVA: 0x00003474 File Offset: 0x00001674
-		public User(string name, string email, string password)
-		{
-			this.Name = name;
-			this.Email = email;
-			this.Password = password;
-		}
-	}
+   
+    public User(string name, string email, string password, string address, DateTime dateOfBirth, string gender, string phoneNumber, bool? isAdmin, byte[] image) 
+    {
+        this.Name = name;
+        this.Email = email;
+        this.Password = password;
+        this.Address = address;
+        this.DateOfBirth = dateOfBirth;
+        this.Gender = gender;
+        this.PhoneNumber = phoneNumber;
+        this.IsAdmin = isAdmin;
+        this.Image = image; 
+    }
 }
+

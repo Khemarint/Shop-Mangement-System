@@ -1,9 +1,13 @@
 ﻿using Computer_Shop.PAL;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Computer;
+using System.Drawing;
+using System.IO;
 
 namespace Computer_Shop
 {
@@ -17,20 +21,45 @@ namespace Computer_Shop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            FormLogin loginForm = new FormLogin();
             while (true)
             {
-                FormLogin loginForm = new FormLogin();
-                if (loginForm.ShowDialog() != DialogResult.OK)
+                if (loginForm.ShowDialog() == DialogResult.OK)
                 {
-                    break; // Exit the application
-                }
+                    DataRow userDetails = loginForm.GetUserDetails();
+                    if (userDetails != null)
+                    {
+                        string userName = userDetails["Users_Name"].ToString();
+                        string userGender = userDetails["Users_Gender"].ToString();
+                        string userEmail = userDetails["Users_Email"].ToString();
+                        byte[] userImage = (byte[])userDetails["User_Image"];
 
-                FormMain mainForm = new FormMain();
-                if (mainForm.ShowDialog() != DialogResult.OK)
+                        // Create an instance of the main form
+                        FormMain mainForm = new FormMain(userName, userGender, userEmail, userImage); // Pass 'userImage' here
+
+                        // Show the main form
+                        if (mainForm.ShowDialog() == DialogResult.OK)
+                        {
+                            // Log out and show the login form again
+                            loginForm = new FormLogin();
+                            continue;
+                        }
+                        else
+                        {
+                            // Exit the application
+                            break;
+                        }
+                    }
+                }
+                else
                 {
-                    continue; // Log out and show the login form again
+                    // Exit the application
+                    break;
                 }
             }
         }
+
+
+
     }
 }

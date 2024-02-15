@@ -44,6 +44,8 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dgvBrand = new System.Windows.Forms.DataGridView();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.picSearch = new System.Windows.Forms.PictureBox();
@@ -61,8 +63,6 @@
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tcBrand.SuspendLayout();
             this.tpAddBrand.SuspendLayout();
             this.tpMangeBrand.SuspendLayout();
@@ -138,11 +138,11 @@
             this.cmbStatus.FillColor = System.Drawing.Color.LightGray;
             this.cmbStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmbStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cmbStatus.ForeColor = System.Drawing.Color.Black;
             this.cmbStatus.ItemHeight = 30;
             this.cmbStatus.Items.AddRange(new object[] {
-            "Select",
+            "---Select---",
             "Available",
             "Not Available"});
             this.cmbStatus.Location = new System.Drawing.Point(277, 108);
@@ -314,6 +314,22 @@
             this.dgvBrand.Size = new System.Drawing.Size(494, 173);
             this.dgvBrand.TabIndex = 0;
             this.dgvBrand.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBrand_CellClick);
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Brand_Name";
+            this.Column2.HeaderText = "Brand Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Brand_Status";
+            this.Column3.HeaderText = "Status";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // label4
             // 
@@ -549,22 +565,6 @@
             // toolTip1
             // 
             this.toolTip1.BackColor = System.Drawing.SystemColors.Highlight;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Brand_Name";
-            this.Column2.HeaderText = "Brand Name";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Brand_Status";
-            this.Column3.HeaderText = "Status";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // UserControlBrand
             // 

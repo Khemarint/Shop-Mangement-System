@@ -1,6 +1,7 @@
 ﻿namespace Computer_Shop.PAL
 {
-    partial class FormMain
+    partial class AdminForm
+
     {
         /// <summary>
         /// Required designer variable.
@@ -29,43 +30,45 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblGender = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.pnlMove = new Guna.UI2.WinForms.Guna2Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.pnlCenter = new Guna.UI2.WinForms.Guna2Panel();
-            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picProfile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.pnlMove = new Guna.UI2.WinForms.Guna2Panel();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUsers = new Guna.UI2.WinForms.Guna2Button();
             this.btnReport = new Guna.UI2.WinForms.Guna2Button();
             this.btnOrders = new Guna.UI2.WinForms.Guna2Button();
             this.btnProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnCategory = new Guna.UI2.WinForms.Guna2Button();
             this.btnBrand = new Guna.UI2.WinForms.Guna2Button();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pnlCenter = new Guna.UI2.WinForms.Guna2Panel();
+            this.userControlUser1 = new Computer_Shop.PAL.UserControlUser();
             this.userControlReport2 = new Computer_Shop.PAL.UserControlReport();
             this.userControlProduct2 = new Computer_Shop.PAL.UserControlProduct();
             this.userControlOrder2 = new Computer_Shop.PAL.UserControlOrder();
             this.userControlDashboard2 = new Computer_Shop.PAL.UserControlDashboard();
             this.userControlCategory2 = new Computer_Shop.PAL.UserControlCategory();
             this.userControlBrand2 = new Computer_Shop.PAL.UserControlBrand();
+            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1.SuspendLayout();
-            this.pnlCenter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProfile)).BeginInit();
+            this.pnlCenter.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -83,6 +86,7 @@
             this.guna2Panel1.Controls.Add(this.lblUsername);
             this.guna2Panel1.Controls.Add(this.pnlMove);
             this.guna2Panel1.Controls.Add(this.btnClose);
+            this.guna2Panel1.Controls.Add(this.btnUsers);
             this.guna2Panel1.Controls.Add(this.btnReport);
             this.guna2Panel1.Controls.Add(this.btnOrders);
             this.guna2Panel1.Controls.Add(this.btnProduct);
@@ -97,6 +101,18 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(187, 700);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
+            this.label6.Location = new System.Drawing.Point(17, 129);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Profile";
             // 
             // lblEmail
             // 
@@ -154,9 +170,9 @@
             this.label2.Location = new System.Drawing.Point(9, 205);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 15);
+            this.label2.Size = new System.Drawing.Size(49, 15);
             this.label2.TabIndex = 3;
-            this.label2.Text = "User :";
+            this.label2.Text = "Admin :";
             // 
             // label1
             // 
@@ -169,88 +185,6 @@
             this.label1.Size = new System.Drawing.Size(49, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Shop";
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(43, 205);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(22, 15);
-            this.lblUsername.TabIndex = 0;
-            this.lblUsername.Text = "{$}";
-            // 
-            // pnlMove
-            // 
-            this.pnlMove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.pnlMove.Location = new System.Drawing.Point(2, 316);
-            this.pnlMove.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlMove.Name = "pnlMove";
-            this.pnlMove.Size = new System.Drawing.Size(4, 40);
-            this.pnlMove.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.label3.Location = new System.Drawing.Point(27, 87);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 28);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Management System";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this.pnlMove;
-            // 
-            // pnlCenter
-            // 
-            this.pnlCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.pnlCenter.BorderRadius = 7;
-            this.pnlCenter.BorderThickness = 6;
-            this.pnlCenter.Controls.Add(this.userControlReport2);
-            this.pnlCenter.Controls.Add(this.userControlProduct2);
-            this.pnlCenter.Controls.Add(this.userControlOrder2);
-            this.pnlCenter.Controls.Add(this.userControlDashboard2);
-            this.pnlCenter.Controls.Add(this.userControlCategory2);
-            this.pnlCenter.Controls.Add(this.userControlBrand2);
-            this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCenter.Location = new System.Drawing.Point(187, 0);
-            this.pnlCenter.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlCenter.Name = "pnlCenter";
-            this.pnlCenter.Size = new System.Drawing.Size(793, 700);
-            this.pnlCenter.TabIndex = 0;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.btnDashboard;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.guna2Panel2.BorderThickness = 2;
-            this.guna2Panel2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Panel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2Panel2.Location = new System.Drawing.Point(3, 138);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(181, 154);
-            this.guna2Panel2.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
-            this.label6.Location = new System.Drawing.Point(17, 129);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Profile";
             // 
             // pictureBox1
             // 
@@ -278,6 +212,27 @@
             this.picProfile.TabIndex = 1;
             this.picProfile.TabStop = false;
             // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
+            this.lblUsername.Location = new System.Drawing.Point(56, 205);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(22, 15);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "{$}";
+            // 
+            // pnlMove
+            // 
+            this.pnlMove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
+            this.pnlMove.Location = new System.Drawing.Point(2, 316);
+            this.pnlMove.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlMove.Name = "pnlMove";
+            this.pnlMove.Size = new System.Drawing.Size(4, 40);
+            this.pnlMove.TabIndex = 0;
+            // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -304,6 +259,32 @@
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = " Log out";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnUsers
+            // 
+            this.btnUsers.AutoRoundedCorners = true;
+            this.btnUsers.BorderRadius = 17;
+            this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUsers.FillColor = System.Drawing.Color.Empty;
+            this.btnUsers.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.ForeColor = System.Drawing.Color.White;
+            this.btnUsers.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnUsers.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnUsers.HoverState.Image = global::Computer_Shop.Properties.Resources.z;
+            this.btnUsers.Image = global::Computer_Shop.Properties.Resources.User;
+            this.btnUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnUsers.Location = new System.Drawing.Point(2, 565);
+            this.btnUsers.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
+            this.btnUsers.Size = new System.Drawing.Size(180, 37);
+            this.btnUsers.TabIndex = 0;
+            this.btnUsers.Text = " Users";
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // btnReport
             // 
@@ -462,6 +443,61 @@
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
+            this.label3.Location = new System.Drawing.Point(27, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 28);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Management System";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(112)))));
+            this.guna2Panel2.BorderThickness = 2;
+            this.guna2Panel2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Panel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2Panel2.Location = new System.Drawing.Point(3, 138);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(181, 154);
+            this.guna2Panel2.TabIndex = 8;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.pnlMove;
+            // 
+            // pnlCenter
+            // 
+            this.pnlCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.pnlCenter.BorderRadius = 7;
+            this.pnlCenter.BorderThickness = 6;
+            this.pnlCenter.Controls.Add(this.userControlUser1);
+            this.pnlCenter.Controls.Add(this.userControlReport2);
+            this.pnlCenter.Controls.Add(this.userControlProduct2);
+            this.pnlCenter.Controls.Add(this.userControlOrder2);
+            this.pnlCenter.Controls.Add(this.userControlDashboard2);
+            this.pnlCenter.Controls.Add(this.userControlCategory2);
+            this.pnlCenter.Controls.Add(this.userControlBrand2);
+            this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlCenter.Location = new System.Drawing.Point(187, 0);
+            this.pnlCenter.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlCenter.Name = "pnlCenter";
+            this.pnlCenter.Size = new System.Drawing.Size(793, 700);
+            this.pnlCenter.TabIndex = 0;
+            // 
+            // userControlUser1
+            // 
+            this.userControlUser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlUser1.Location = new System.Drawing.Point(0, 0);
+            this.userControlUser1.Name = "userControlUser1";
+            this.userControlUser1.Size = new System.Drawing.Size(793, 700);
+            this.userControlUser1.TabIndex = 0;
+            this.userControlUser1.Visible = false;
+            // 
             // userControlReport2
             // 
             this.userControlReport2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -522,7 +558,11 @@
             this.userControlBrand2.TabIndex = 0;
             this.userControlBrand2.Visible = false;
             // 
-            // FormMain
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.btnDashboard;
+            // 
+            // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -533,17 +573,17 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FormMain";
+            this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Shop Management Shop";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FormMain_Load);
-            this.Click += new System.EventHandler(this.FormMain_Load);
+            this.Load += new System.EventHandler(this.AdminForm_Load);
+            this.Click += new System.EventHandler(this.AdminForm_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.pnlCenter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProfile)).EndInit();
+            this.pnlCenter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -557,6 +597,7 @@
         private Guna.UI2.WinForms.Guna2Button btnProduct;
         private Guna.UI2.WinForms.Guna2Button btnOrders;
         private Guna.UI2.WinForms.Guna2Button btnReport;
+        private Guna.UI2.WinForms.Guna2Button btnUsers;
         private Guna.UI2.WinForms.Guna2Button btnClose;
         private Guna.UI2.WinForms.Guna2Panel pnlMove;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
@@ -579,6 +620,7 @@
         private UserControlOrder userControlOrder2;
         private UserControlProduct userControlProduct2;
         private UserControlReport userControlReport2;
+        private UserControlUser userControlUser1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.Label lblEmail;

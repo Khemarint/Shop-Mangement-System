@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,8 +14,14 @@ namespace Computer_Shop.PAL
 {
     public partial class FormLogin : Form
     {
-        
 
+        private DataRow userDetails;
+
+        // Add a method to get the user details
+        public DataRow GetUserDetails()
+        {
+            return userDetails;
+        }
         public FormLogin()
         {
             InitializeComponent();
@@ -22,7 +29,7 @@ namespace Computer_Shop.PAL
 
         private void txtUsername_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "Username")
+            if (txtUsername.Text == "JohnDoe")
             {
                 txtUsername.Text = "";
             }
@@ -30,7 +37,7 @@ namespace Computer_Shop.PAL
 
         private void txtPassword_Click(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "Password")
+            if (txtPassword.Text == "123")
             {
                 txtPassword.Text = "";
             }
@@ -51,7 +58,7 @@ namespace Computer_Shop.PAL
 
         private void picShow_Click(object sender, EventArgs e)
         {
-            if(picShow.Visible == true)
+            if (picShow.Visible == true)
             {
                 txtPassword.UseSystemPasswordChar = false;
                 picShow.Visible = false;
@@ -69,9 +76,22 @@ namespace Computer_Shop.PAL
             }
         }
 
+        private void lbForgetPassword_Click(object sender, EventArgs e)
+        {
+            FormForgotPassword formForgotPassword = new FormForgotPassword();
+            formForgotPassword.ShowDialog();
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            if(txtUsername.Text.Trim() == string.Empty)
+            if (txtUsername.Text.Trim() == string.Empty)
             {
                 MessageBox.Show("Please enter Username.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -83,36 +103,43 @@ namespace Computer_Shop.PAL
             }
             else
             {
-                bool check = Computer.Computer.IsValidNamePass(txtUsername.Text.Trim(), txtPassword.Text.Trim());
-                if (check)
+                DataRow userDetails = Computer.Computer.IsValidNamePass(txtUsername.Text.Trim(), txtPassword.Text.Trim());
+                if (userDetails != null)
                 {
-                    FormMain formMain = new FormMain();
-                    string username = txtUsername.Text;
-                    username = char.ToUpper(username[0]) + username.Substring(1); // Capitalize the first letter
-                    formMain.name = username;
-                    this.Hide();
-                    formMain.ShowDialog();
+                    string userName = userDetails["Users_Name"].ToString();
+                    string userGender = userDetails["Users_Gender"].ToString();
+                    string userEmail = userDetails["Users_Email"].ToString();
+                    byte[] userImage = (byte[])userDetails["User_Image"];
+                    bool isAdmin = userDetails["IsAdmin"] == DBNull.Value ? false : Convert.ToBoolean(userDetails["IsAdmin"]);
+                    if (isAdmin)
+                    {
+                        // Open the admin form
+                        AdminForm adminForm = new AdminForm(userName, userGender, userEmail,userImage);
+                        adminForm.Show();
+                    }
+                    else
+                    {
+                        // Create an instance of the main form
+                        FormMain formMain = new FormMain(userName, userGender, userEmail,userImage);
 
+                        // Hide the login form
+                        this.Hide();
 
+                        // Show the main form
+                        formMain.ShowDialog();
+
+                        // Close the login form
+                        this.Show();
+
+                    }
                 }
                 else
                 {
-
-                    MessageBox.Show("Username or Passowrd is incorrect", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Username or Password is incorrect", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
-
-        private void lbForgetPassword_Click(object sender, EventArgs e)
-        {
-            FormForgotPassword formForgotPassword = new FormForgotPassword();
-            formForgotPassword.ShowDialog();
-        }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
-        }
+     
 
     }
 }

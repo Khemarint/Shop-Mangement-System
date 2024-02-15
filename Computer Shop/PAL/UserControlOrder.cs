@@ -39,7 +39,6 @@ namespace Computer_Shop.PAL
             txtCustomerName.Clear();
             mtbCustomerNumber.Clear();
             AddClear();
-            //dgvOrder.Rows.Clear();
             txtTotalAmount.Text = "0";
             nudPaidAmount.Value = 0;
             txtDueAmount.Text = "0";

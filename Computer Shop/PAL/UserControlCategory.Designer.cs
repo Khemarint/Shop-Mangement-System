@@ -137,11 +137,11 @@
             this.cmbStatus.FillColor = System.Drawing.Color.LightGray;
             this.cmbStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmbStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cmbStatus.ForeColor = System.Drawing.Color.Black;
             this.cmbStatus.ItemHeight = 30;
             this.cmbStatus.Items.AddRange(new object[] {
-            "Select",
+            "---Select---",
             "Available",
             "Not Available"});
             this.cmbStatus.Location = new System.Drawing.Point(277, 108);
@@ -474,7 +474,7 @@
             this.cmbStatus1.FillColor = System.Drawing.Color.LightGray;
             this.cmbStatus1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmbStatus1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbStatus1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbStatus1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cmbStatus1.ForeColor = System.Drawing.Color.Black;
             this.cmbStatus1.ItemHeight = 30;
             this.cmbStatus1.Items.AddRange(new object[] {

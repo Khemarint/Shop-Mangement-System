@@ -8,9 +8,31 @@ create table Users
 	Users_Password VARCHAR(150),
 	CONSTRAINT PK_Users PRIMARY KEY (Users_Id)
 );
+ALTER TABLE Users
+ADD Users_Address VARCHAR(255),
+    Users_DateOfBirth DATE,
+    Users_Gender VARCHAR(10),
+    Users_PhoneNumber VARCHAR(15);
+
+ALTER TABLE Users
+ADD IsAdmin BIT DEFAULT 0;
+
+UPDATE Users
+SET IsAdmin = 1
+WHERE Users_Name = 'Khemarint';
+
+
 
 INSERT INTO Users VALUES 
 	('Khemairnt','Khemarint@gmail.com','44445555');
+
+INSERT INTO Users (Users_Name, Users_Email, Users_Password, Users_Address, Users_DateOfBirth, Users_Gender, Users_PhoneNumber) 
+VALUES ('JohnDoe', 'johndoe@example.com', '123', '123 Main St', '1980-01-01', 'Male', '123-456-7890');
+
+
+DELETE FROM Users WHERE Users_Id IN (2, 7);
+
+
 
 INSERT INTO Users VALUES 
 	('Khemarint','Khemarint@gmail.com','123');

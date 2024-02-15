@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,13 +10,13 @@ using System.Windows.Forms;
 using Computer;
 using Guna.UI2.WinForms;
 using System.Runtime.InteropServices;
-
+using System.IO;
 
 namespace Computer_Shop.PAL
 {
-    public partial class FormMain : Form
+    public partial class AdminForm : Form
     {
-      
+        //public string name = "{?}";
         public string userName;
         public string userGender;
         public string userEmail;
@@ -36,7 +35,7 @@ namespace Computer_Shop.PAL
         }
 
 
-        public FormMain(string userName, string userGender, string userEmail, byte[] userImage)
+        public AdminForm(string userName, string userGender, string userEmail, byte[] userImage)
         {
             InitializeComponent();
             this.userName = userName;
@@ -45,25 +44,25 @@ namespace Computer_Shop.PAL
             this.userImage = userImage;
         }
 
-    
-
         private void MovePanel(Control btn)
         {
             pnlMove.Top = btn.Top;
             pnlMove.Height = btn.Height;
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
+        private void AdminForm_Load(object sender, EventArgs e)
         {
             lblUsername.Text = this.userName;
             lblGender.Text = this.userGender;
             lblEmail.Text = this.userEmail;
-
             using (MemoryStream ms = new MemoryStream(this.userImage))
             {
                 picProfile.Image = Image.FromStream(ms);
             }
+
+
         }
+    
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -87,7 +86,7 @@ namespace Computer_Shop.PAL
             userControlOrder2.Visible = false;
             userControlReport2.Visible = false;
             userControlDashboard2.Count();
-           
+            userControlUser1.Visible = false;
         }
 
         private void btnBrand_Click(object sender, EventArgs e)
@@ -100,7 +99,7 @@ namespace Computer_Shop.PAL
             userControlProduct2.Visible = false;
             userControlOrder2.Visible = false;
             userControlReport2.Visible = false;
-       
+            userControlUser1.Visible = false;
 
             //pnlCenter.Controls.Clear();
             //UserControlBrand abc = new UserControlBrand();
@@ -119,7 +118,7 @@ namespace Computer_Shop.PAL
             userControlProduct2.Visible = false;
             userControlOrder2.Visible = false;
             userControlReport2.Visible = false;
-      
+            userControlUser1.Visible = false;
 
 
         }
@@ -134,7 +133,7 @@ namespace Computer_Shop.PAL
             userControlProduct2.Visible=true;
             userControlOrder2.Visible = false;
             userControlReport2.Visible=false;
-        
+            userControlUser1.Visible = false;
 
 
         }
@@ -149,7 +148,7 @@ namespace Computer_Shop.PAL
             userControlOrder2.Visible = true;
             userControlOrder2.EmptyBox();
             userControlReport2.Visible = false;
-        
+            userControlUser1.Visible = false;
 
 
         }
@@ -163,7 +162,25 @@ namespace Computer_Shop.PAL
             userControlProduct2.Visible=false;
             userControlOrder2.Visible = false;
             userControlReport2.Visible = true;
-       
+            userControlUser1.Visible = false;
+
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            MovePanel(btnUsers);
+            userControlDashboard2.Visible = false;
+            userControlBrand2.Visible = false;
+            userControlCategory2.Visible = false;
+            userControlProduct2.Visible=false;
+            userControlOrder2.Visible = false;
+            userControlReport2.Visible = false;
+            userControlUser1.Visible = true;
+         
+        }
+
+        private void userControlUser1_Load(object sender, EventArgs e)
+        {
 
         }
     }

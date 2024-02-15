@@ -54,11 +54,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtTotalAmount = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgvProductList = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnAdd = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTotal = new Guna.UI2.WinForms.Guna2TextBox();
@@ -79,6 +74,16 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dgvOrder = new System.Windows.Forms.DataGridView();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.txtSearchCustomerName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -112,16 +117,11 @@
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.tcOrder.SuspendLayout();
             this.tpAddOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDiscount)).BeginInit();
@@ -542,39 +542,6 @@
             this.dgvProductList.TabIndex = 0;
             this.dgvProductList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductList_CellClick);
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Name";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Rate";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Quantity";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Total";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.FillWeight = 40F;
-            this.Column5.HeaderText = "Action";
-            this.Column5.Image = global::Computer_Shop.Properties.Resources.trash;
-            this.Column5.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
             // btnAdd
             // 
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -731,9 +698,9 @@
             this.label4.Location = new System.Drawing.Point(17, 103);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 15);
+            this.label4.Size = new System.Drawing.Size(151, 15);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Customer Number : ";
+            this.label4.Text = "Customer Phone Number : ";
             // 
             // label3
             // 
@@ -935,6 +902,77 @@
             this.dgvOrder.Size = new System.Drawing.Size(728, 173);
             this.dgvOrder.TabIndex = 0;
             this.dgvOrder.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrder_CellClick);
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Orders_Id";
+            this.Column6.HeaderText = "Order #";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Visible = false;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Orders_Date";
+            this.Column7.HeaderText = "Date";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "Customer_Name";
+            this.Column8.HeaderText = "Customer Name";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "Customer_Number";
+            this.Column9.HeaderText = "Customer Number";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "Total_Amount";
+            this.Column10.HeaderText = "Total Amount";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.DataPropertyName = "Paid_Amount";
+            this.Column11.HeaderText = "Paid Amount";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "Due_Amount";
+            this.Column12.HeaderText = "Due Amount";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "Discount";
+            this.Column13.HeaderText = "Discount";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            // 
+            // Column15
+            // 
+            this.Column15.DataPropertyName = "Payment_Status";
+            this.Column15.HeaderText = "Status";
+            this.Column15.Name = "Column15";
+            this.Column15.ReadOnly = true;
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "Grand_Total";
+            this.Column14.HeaderText = "Grand Total";
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
             // 
             // label16
             // 
@@ -1299,9 +1337,9 @@
             this.label19.Location = new System.Drawing.Point(17, 103);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(114, 15);
+            this.label19.Size = new System.Drawing.Size(151, 15);
             this.label19.TabIndex = 0;
-            this.label19.Text = "Customer Number : ";
+            this.label19.Text = "Customer Phone Number : ";
             // 
             // label20
             // 
@@ -1353,7 +1391,7 @@
             this.txtCustomerName1.PasswordChar = '\0';
             this.txtCustomerName1.PlaceholderText = "";
             this.txtCustomerName1.SelectedText = "";
-            this.txtCustomerName1.Size = new System.Drawing.Size(363, 36);
+            this.txtCustomerName1.Size = new System.Drawing.Size(316, 36);
             this.txtCustomerName1.TabIndex = 11;
             // 
             // label21
@@ -1413,76 +1451,38 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // Column6
+            // Column1
             // 
-            this.Column6.DataPropertyName = "Orders_Id";
-            this.Column6.HeaderText = "Order #";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Visible = false;
+            this.Column1.HeaderText = "Name";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
-            // Column7
+            // Column2
             // 
-            this.Column7.DataPropertyName = "Orders_Date";
-            this.Column7.HeaderText = "Date";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
+            this.Column2.HeaderText = "Price";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
-            // Column8
+            // Column3
             // 
-            this.Column8.DataPropertyName = "Customer_Name";
-            this.Column8.HeaderText = "Customer Name";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
+            this.Column3.HeaderText = "Quantity";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
-            // Column9
+            // Column4
             // 
-            this.Column9.DataPropertyName = "Customer_Number";
-            this.Column9.HeaderText = "Customer Number";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
+            this.Column4.HeaderText = "Total";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
-            // Column10
+            // Column5
             // 
-            this.Column10.DataPropertyName = "Total_Amount";
-            this.Column10.HeaderText = "Total Amount";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            // 
-            // Column11
-            // 
-            this.Column11.DataPropertyName = "Paid_Amount";
-            this.Column11.HeaderText = "Paid Amount";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            // 
-            // Column12
-            // 
-            this.Column12.DataPropertyName = "Due_Amount";
-            this.Column12.HeaderText = "Due Amount";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            // 
-            // Column13
-            // 
-            this.Column13.DataPropertyName = "Discount";
-            this.Column13.HeaderText = "Discount";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
-            // 
-            // Column15
-            // 
-            this.Column15.DataPropertyName = "Payment_Status";
-            this.Column15.HeaderText = "Status";
-            this.Column15.Name = "Column15";
-            this.Column15.ReadOnly = true;
-            // 
-            // Column14
-            // 
-            this.Column14.DataPropertyName = "Grand_Total";
-            this.Column14.HeaderText = "Grand Total";
-            this.Column14.Name = "Column14";
-            this.Column14.ReadOnly = true;
+            this.Column5.FillWeight = 40F;
+            this.Column5.HeaderText = "Action";
+            this.Column5.Image = global::Computer_Shop.Properties.Resources.trash;
+            this.Column5.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // UserControlOrder
             // 
@@ -1532,11 +1532,6 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2CircleButton btnAdd;
         private System.Windows.Forms.DataGridView dgvProductList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewImageColumn Column5;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtTotalAmount;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
@@ -1598,5 +1593,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewImageColumn Column5;
     }
 }
