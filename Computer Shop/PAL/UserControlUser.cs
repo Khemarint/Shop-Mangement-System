@@ -92,7 +92,6 @@ namespace Computer_Shop.PAL
                 txtEmail1.Text = row.Cells[2].Value.ToString();
                 txtPassword1.Text = row.Cells[3].Value.ToString();
                 tcUser.SelectedTab = tpOption;
-
             }
         }
 
