@@ -17,9 +17,13 @@ ADD Users_Address VARCHAR(255),
 ALTER TABLE Users
 ADD IsAdmin BIT DEFAULT 0;
 
+ALTER TABLE Users
+ADD User_Image VARBINARY(MAX);
+
+
 UPDATE Users
 SET IsAdmin = 1
-WHERE Users_Name = 'Khemarint';
+WHERE Users_Name = 'lolo';
 
 
 
@@ -30,7 +34,7 @@ INSERT INTO Users (Users_Name, Users_Email, Users_Password, Users_Address, Users
 VALUES ('JohnDoe', 'johndoe@example.com', '123', '123 Main St', '1980-01-01', 'Male', '123-456-7890');
 
 
-DELETE FROM Users WHERE Users_Id IN (2, 7);
+DELETE FROM Users WHERE Users_Id IN (8, 11, 12);
 
 
 
