@@ -18,3 +18,4 @@ This project is a shop management system built with C# in Microsoft Visual Studi
 3. Open the project in Visual Studio Code.
 
 <img src="https://github.com/Khemarint/Shop-Mangement-System/blob/master/Images/shop.jpg" alt="Dashboard">
+<img src="https://github.com/Khemarint/Shop-Mangement-System/blob/master/Images/User.jpg" alt="Dashboard">
