@@ -17,5 +17,7 @@ This project is a shop management system built with C# in Microsoft Visual Studi
 2. Clone the repository: git clone https://github.com/Khemarint/Shop-Mangement-System.git
 3. Open the project in Visual Studio Code.
 
+
+## Locate to the Images directory to see more picture of project.
 <img src="https://github.com/Khemarint/Shop-Mangement-System/blob/master/Images/shop.jpg" alt="Dashboard">
 <img src="https://github.com/Khemarint/Shop-Mangement-System/blob/master/Images/User.jpg" alt="Dashboard">
