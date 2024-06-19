@@ -14,7 +14,7 @@ This project is a shop management system built with C# in Microsoft Visual Studi
 
 ## Installation
 1. Ensure you have Microsoft Visual Studio Code installed.
-2. Clone the repository: `git clone https://github.com/yourusername/shop-management-system.git`
+2. Clone the repository: git clone https://github.com/Khemarint/Shop-Mangement-System.git
 3. Open the project in Visual Studio Code.
 
 <img src="https://github.com/Khemarint/Shop-Mangement-System/blob/master/Images/shop.jpg" alt="Dashboard">
